@@ -1,0 +1,5 @@
+ag2[tracing, browser-use, anthropic, duckduckgo, mcp]==0.11.2
+python-dotenv==1.2.2
+ollama==0.6.1
+fix-busted-json==0.0.19
+ddgs
