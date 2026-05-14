@@ -3,7 +3,7 @@ import os
 
 
 #rootFolder = os.environ["ROOT_FOLDER"]
-rootFolder = "eros"
+rootFolder = "aitagent"
 
 def getRootPath() -> Path:
     parts = Path.cwd().parts

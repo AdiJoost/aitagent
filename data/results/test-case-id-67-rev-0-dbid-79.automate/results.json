@@ -1,56 +1,84 @@
 {
-  "accuracy_in_advance": {
-    "titleTypes": {
-      "accuracy": 0.4411764705882353,
-      "confMatix": {
+  "prior": {
+    "titleType": {
+      "overall": 0.7142857142857143,
+      "confusion_matrix": {
         "true_positiv": 0,
         "true_negativ": 15,
         "false_positive": 0,
-        "false_negative": 19,
-        "precision": 0,
+        "false_negative": 6,
+        "precision": 0.0,
         "recall": 0.0,
         "f_one_score": 0.0
       }
     },
     "title": {
-      "accuracy": 0.0,
-      "confMatrix": {
+      "overall": 0.0,
+      "confusion_matrix": {
         "true_positiv": 0,
         "true_negativ": 0,
         "false_positive": 0,
-        "false_negative": 34,
-        "precision": 0,
+        "false_negative": 21,
+        "precision": 0.0,
         "recall": 0.0,
         "f_one_score": 0.0
       }
     },
-    "transition": { "invalidTransitionRate": 0.5 }
+    "deletion": {
+      "overall": 0.6176470588235294,
+      "confusion_matrix": {
+        "true_positiv": 0,
+        "true_negativ": 21,
+        "false_positive": 0,
+        "false_negative": 13,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f_one_score": 0.0
+      }
+    },
+    "invalidTransitionRate": 0.0,
+    "totalSections": 34
   },
-  "accuracy_afterwards": {
-    "titleTypes": {
-      "accuracy": 0.9473684210526315,
-      "confMatix": {
-        "true_positiv": 4,
+  "posterior": {
+    "titleType": {
+      "overall": 0.8571428571428571,
+      "confusion_matrix": {
+        "true_positiv": 3,
         "true_negativ": 15,
-        "false_positive": 0,
+        "false_positive": 3,
         "false_negative": 0,
-        "precision": 0.21052631578947367,
+        "precision": 0.5,
         "recall": 1.0,
-        "f_one_score": 1.0
+        "f_one_score": 0.6666666666666666
       }
     },
     "title": {
-      "accuracy": 0.47368421052631576,
-      "confMatrix": {
-        "true_positiv": 19,
+      "overall": 0.47368421052631576,
+      "confusion_matrix": {
+        "true_positiv": 9,
         "true_negativ": 0,
-        "false_positive": 0,
+        "false_positive": 12,
         "false_negative": 0,
-        "precision": 1.0,
+        "precision": 0.42857142857142855,
         "recall": 1.0,
-        "f_one_score": 1.0
+        "f_one_score": 0.6
       }
     },
-    "transition": { "invalidTransitionRate": 0.5 }
-  }
+    "deletion": {
+      "overall": 1.0,
+      "confusion_matrix": {
+        "true_positiv": 13,
+        "true_negativ": 19,
+        "false_positive": 2,
+        "false_negative": 0,
+        "precision": 0.8666666666666667,
+        "recall": 1.0,
+        "f_one_score": 0.9285714285714286
+      }
+    },
+    "invalidTransitionRate": 0.05882352941176472,
+    "totalSections": 19
+  },
+  "sectionsToDelete": 13,
+  "sectionWithUpdates": 21
 }

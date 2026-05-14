@@ -1,6 +1,15 @@
 version: "3.8"
 
 services:
+  aitagent:
+    build: .
+    container_name: aitagent
+    ports:
+      - "8080:8080"
+    env_file:
+      - .env
+    restart: unless-stopped
+
   jaeger:
     image: jaegertracing/jaeger:latest
     container_name: jaeger

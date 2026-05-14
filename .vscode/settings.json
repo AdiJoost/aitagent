@@ -1,0 +1,17 @@
+{
+  "[python]": {
+    "editor.defaultFormatter": "charliermarsh.ruff",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "always"
+    }
+  },
+  "sonarlint.rules": {},
+  "sonarlint.pathToCompile": "",
+  "sonarlint.disableTelemetry": true,
+  "sonarlint.output.showAnalyzerLogs": false,
+  "sonarlint.output.showVerboseLogs": false,
+  "sonarlint.analysisExcludesStandalone": {
+    "**/*": true
+  }
+}

@@ -10,3 +10,5 @@ tunneling: ssh -L 11434:localhost:11434 -J joostadrian@nickel.fhgr.ch joostadria
 resolve dns manually: nslookup nickel.fhgr.ch
 
 start tool inspector: npx @modelcontextprotocol/inspector (nvm use 23.11.0)
+
+start server: uvicorn server:app --reload --port 8080
