@@ -1,0 +1,84 @@
+{
+  "prior": {
+    "titleType": {
+      "overall": 0.9239130434782609,
+      "confusion_matrix": {
+        "true_positiv": 0,
+        "true_negativ": 170,
+        "false_positive": 0,
+        "false_negative": 14,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f_one_score": 0.0
+      }
+    },
+    "title": {
+      "overall": 0.717391304347826,
+      "confusion_matrix": {
+        "true_positiv": 0,
+        "true_negativ": 132,
+        "false_positive": 0,
+        "false_negative": 52,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f_one_score": 0.0
+      }
+    },
+    "deletion": {
+      "overall": 1.0,
+      "confusion_matrix": {
+        "true_positiv": 0,
+        "true_negativ": 184,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f_one_score": 0.0
+      }
+    },
+    "invalidTransitionRate": 0.0,
+    "totalSections": 184
+  },
+  "posterior": {
+    "titleType": {
+      "overall": 0.6086956521739131,
+      "confusion_matrix": {
+        "true_positiv": 4,
+        "true_negativ": 108,
+        "false_positive": 72,
+        "false_negative": 0,
+        "precision": 0.05263157894736842,
+        "recall": 1.0,
+        "f_one_score": 0.1
+      }
+    },
+    "title": {
+      "overall": 0.6506024096385542,
+      "confusion_matrix": {
+        "true_positiv": 0,
+        "true_negativ": 98,
+        "false_positive": 76,
+        "false_negative": 10,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f_one_score": 0.0
+      }
+    },
+    "deletion": {
+      "overall": 1.0,
+      "confusion_matrix": {
+        "true_positiv": 0,
+        "true_negativ": 166,
+        "false_positive": 18,
+        "false_negative": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f_one_score": 0.0
+      }
+    },
+    "invalidTransitionRate": 0.2065217391304348,
+    "totalSections": 166
+  },
+  "sectionsToDelete": 0,
+  "sectionWithUpdates": 57
+}

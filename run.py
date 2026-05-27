@@ -10,6 +10,8 @@ from config.rootPath import getRootPath
 from src.llm.agents.manual_agent import ClaudeAgent
 from src.singel_worker import update_testcase_single_agent
 
+evaluating_testcase_name = "test-case-id-87-rev-8-dbid-2113.automate.json"
+
 
 async def main():
     load_dotenv()
@@ -18,7 +20,7 @@ async def main():
     mainPath = getRootPath()
     dataPath = mainPath.joinpath("data", "testcases_to_update")
     for filename in os.listdir(dataPath):
-        if filename == "test-case-id-67-rev-0-dbid-79.automate.json":
+        if filename == evaluating_testcase_name:
             filepath = dataPath.joinpath(filename)
             solutionPath = mainPath.joinpath("data", "solutions", filename)
             resultPath = mainPath.joinpath("data", "results", filename[:-5])

@@ -1,0 +1,460 @@
+{
+  "testSectionsUpdates": [
+    {
+      "sectionId": 67577,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Test Preparation",
+        "titleType": "TITLE_HEADER_1"
+      }
+    },
+    {
+      "sectionId": 1710,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "General Setup",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 1711,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Set ASL",
+        "titleType": "STANDARD"
+      }
+    },
+    {
+      "sectionId": 1712,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Set patient adult/male",
+        "titleType": "STANDARD"
+      }
+    },
+    {
+      "sectionId": 1713,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Set Alarms",
+        "titleType": "STANDARD"
+      }
+    },
+    {
+      "sectionId": 67578,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "PEEP and Pcontrol without Psync",
+        "titleType": "TITLE_HEADER_1"
+      }
+    },
+    {
+      "sectionId": 1715,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "PEEP = default value, Pcontrol = default value",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 1716,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "ASL",
+        "titleType": "STANDARD"
+      }
+    },
+    {
+      "sectionId": 1717,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Setup",
+        "titleType": "STANDARD"
+      }
+    },
+    {
+      "sectionId": 1718,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Execution",
+        "titleType": "STANDARD"
+      }
+    },
+    {
+      "sectionId": 1719,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Evaluation",
+        "titleType": "STANDARD"
+      }
+    },
+    {
+      "sectionId": 1720,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "CleanUp",
+        "titleType": "STANDARD"
+      }
+    },
+    {
+      "sectionId": 1722,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "PEEP = minimum, Pcontrol = maximum",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 1723,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "ASL",
+        "titleType": "STANDARD"
+      }
+    },
+    {
+      "sectionId": 1724,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Setup",
+        "titleType": "STANDARD"
+      }
+    },
+    {
+      "sectionId": 1725,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Execution",
+        "titleType": "STANDARD"
+      }
+    },
+    {
+      "sectionId": 1726,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Evaluation",
+        "titleType": "STANDARD"
+      }
+    },
+    {
+      "sectionId": 1727,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "CleanUp",
+        "titleType": "STANDARD"
+      }
+    },
+    {
+      "sectionId": 1729,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "PEEP = maximum, Pcontrol = minimum",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 1730,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "ASL",
+        "titleType": "STANDARD"
+      }
+    },
+    {
+      "sectionId": 1731,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Setup",
+        "titleType": "STANDARD"
+      }
+    },
+    {
+      "sectionId": 1732,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Execution",
+        "titleType": "STANDARD"
+      }
+    },
+    {
+      "sectionId": 1733,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Evaluation",
+        "titleType": "STANDARD"
+      }
+    },
+    {
+      "sectionId": 1734,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "CleanUp",
+        "titleType": "STANDARD"
+      }
+    },
+    {
+      "sectionId": 1736,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "PEEP = additional value, Pcontrol = additional value",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 1737,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "ASL",
+        "titleType": "STANDARD"
+      }
+    },
+    {
+      "sectionId": 1738,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Setup",
+        "titleType": "STANDARD"
+      }
+    },
+    {
+      "sectionId": 1739,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Execution",
+        "titleType": "STANDARD"
+      }
+    },
+    {
+      "sectionId": 1740,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Evaluation",
+        "titleType": "STANDARD"
+      }
+    },
+    {
+      "sectionId": 1741,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "CleanUp",
+        "titleType": "STANDARD"
+      }
+    },
+    {
+      "sectionId": 1742,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "PEEP and Pcontrol with Psync",
+        "titleType": "TITLE_HEADER_1"
+      }
+    },
+    {
+      "sectionId": 1743,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "PEEP = default value, Pcontrol = default value",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 1744,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "ASL",
+        "titleType": "STANDARD"
+      }
+    },
+    {
+      "sectionId": 1745,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Setup",
+        "titleType": "STANDARD"
+      }
+    },
+    {
+      "sectionId": 1746,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Execution",
+        "titleType": "STANDARD"
+      }
+    },
+    {
+      "sectionId": 1747,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Evaluation",
+        "titleType": "STANDARD"
+      }
+    },
+    {
+      "sectionId": 1748,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "CleanUp",
+        "titleType": "STANDARD"
+      }
+    },
+    {
+      "sectionId": 1750,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "PEEP = minimum, Pcontrol = maximum",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 1751,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "ASL",
+        "titleType": "STANDARD"
+      }
+    },
+    {
+      "sectionId": 1752,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Setup",
+        "titleType": "STANDARD"
+      }
+    },
+    {
+      "sectionId": 1753,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Execution",
+        "titleType": "STANDARD"
+      }
+    },
+    {
+      "sectionId": 1754,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Evaluation",
+        "titleType": "STANDARD"
+      }
+    },
+    {
+      "sectionId": 1755,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "CleanUp",
+        "titleType": "STANDARD"
+      }
+    },
+    {
+      "sectionId": 1757,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "PEEP = maximum, Pcontrol = minimum",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 1758,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "ASL",
+        "titleType": "STANDARD"
+      }
+    },
+    {
+      "sectionId": 1759,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Setup",
+        "titleType": "STANDARD"
+      }
+    },
+    {
+      "sectionId": 1760,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Execution",
+        "titleType": "STANDARD"
+      }
+    },
+    {
+      "sectionId": 1761,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Evaluation",
+        "titleType": "STANDARD"
+      }
+    },
+    {
+      "sectionId": 1762,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "CleanUp",
+        "titleType": "STANDARD"
+      }
+    },
+    {
+      "sectionId": 1764,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "PEEP = additional value, Pcontrol = additional value",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 1765,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "ASL",
+        "titleType": "STANDARD"
+      }
+    },
+    {
+      "sectionId": 1766,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Setup",
+        "titleType": "STANDARD"
+      }
+    },
+    {
+      "sectionId": 1767,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Execution",
+        "titleType": "STANDARD"
+      }
+    },
+    {
+      "sectionId": 1768,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Evaluation",
+        "titleType": "STANDARD"
+      }
+    },
+    {
+      "sectionId": 1769,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "CleanUp",
+        "titleType": "STANDARD"
+      }
+    },
+    {
+      "sectionId": 67579,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Rate and Inspiration Time with TI-Philosophy",
+        "titleType": "TITLE_HEADER_1"
+      }
+    },
+    {
+      "sectionId": 1771,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Rate = default value, TI = default value",
+        "titleType": "TITLE_HEADER_2"
+      }
+    }
+  ]
+}
