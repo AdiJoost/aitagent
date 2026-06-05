@@ -35,7 +35,7 @@ class RunRequest(BaseModel):
     testCaseString: Any
     solutionString: Any
     userPrompt: str
-    maxTurns: int = 50
+    maxTurns: int = 5
 
     @model_validator(mode="after")
     def stringify_json_fields(self):
