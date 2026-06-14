@@ -1,0 +1,140 @@
+{
+  "testSectionsUpdates": [
+    {
+      "sectionId": 67610,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Test Preparation",
+        "titleType": "TITLE_HEADER_1"
+      }
+    },
+    {
+      "sectionId": 67626,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "General Setup",
+        "titleType": "TITLE_HEADER_1"
+      }
+    },
+    {
+      "sectionId": 67611,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Set ASL",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 67612,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Set patient neonatal",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 67613,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Set Alarms",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 67614,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Check Alarm: High Volume",
+        "titleType": "TITLE_HEADER_1"
+      }
+    },
+    {
+      "sectionId": 67615,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "ASL",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 67616,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Setup",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 67617,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Execution | 1/3",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 67618,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Execution | 2/3",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 67619,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Execution | 3/3",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 67620,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Scripting",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 67621,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Evaluation",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 67622,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "CleanUp",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 67623,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "General CleanUp",
+        "titleType": "TITLE_HEADER_1"
+      }
+    },
+    {
+      "sectionId": 67624,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Stop ventilation",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 67625,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Clean ASL",
+        "titleType": "TITLE_HEADER_2"
+      }
+    }
+  ]
+}
