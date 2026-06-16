@@ -53,7 +53,7 @@
       "changeType": "UPDATE",
       "sectionDTO": {
         "title": "Flow pattern = 50% decelerating",
-        "titleType": "TITLE_HEADER_3"
+        "titleType": "TITLE_HEADER_2"
       }
     },
     {
@@ -109,7 +109,7 @@
       "changeType": "UPDATE",
       "sectionDTO": {
         "title": "Flow pattern = sine",
-        "titleType": "TITLE_HEADER_3"
+        "titleType": "TITLE_HEADER_2"
       }
     },
     {
@@ -165,7 +165,7 @@
       "changeType": "UPDATE",
       "sectionDTO": {
         "title": "Flow pattern = 100% decelerating",
-        "titleType": "TITLE_HEADER_3"
+        "titleType": "TITLE_HEADER_2"
       }
     },
     {
@@ -221,7 +221,7 @@
       "changeType": "UPDATE",
       "sectionDTO": {
         "title": "Flow pattern = square",
-        "titleType": "TITLE_HEADER_3"
+        "titleType": "TITLE_HEADER_2"
       }
     },
     {

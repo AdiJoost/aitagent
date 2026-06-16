@@ -4,12 +4,11 @@ import logging
 import os
 from typing import List, Optional
 
-from anthropic import AsyncAnthropic
+from ollama import AsyncClient
 from pydantic import ValidationError
 
 logger = logging.getLogger(__name__)
 
-from anthropic.types import Message
 from mcp import ClientSession, StdioServerParameters
 from mcp.client.stdio import stdio_client
 from mcp.client.streamable_http import streamable_http_client
@@ -20,31 +19,26 @@ from src.utilities.telemetry.telemetry import Telemetry
 from src.utilities.telemetry.trace_provider import TraceProvider
 
 
-class ClaudeAgent:
+class OllamaAgent:
     def __init__(
         self,
         messages: list,
-        model: str = "claude-opus-4-6",
+        model: str = "qwen2.5:14b",
         max_tokens: int = 500,
         temperature: float = 0,
         max_number_of_turns: int = 10,
         mcp_http: str = "http://127.0.0.1:8000/mcp",
+        ollama_host: str = "http://127.0.0.1:11434",
         with_trace_provicer: bool = False,
         chatty: bool = False,
     ):
-        # Anthropic requires system prompt as a separate parameter, not in messages
-        self.system_prompt = None
-        self.messages = []
-        for msg in messages:
-            if msg["role"] == "system":
-                self.system_prompt = msg["content"]
-            else:
-                self.messages.append(msg)
+        self.messages = list(messages)
         self.model = model
         self.max_tokens = max_tokens
         self.temperature = temperature
         self.max_number_of_turns = max_number_of_turns
         self.mcp_http = mcp_http
+        self.ollama_host = ollama_host
         self.with_trace_provider = with_trace_provicer
         self.results = {}
         self.tools_called = []
@@ -79,17 +73,20 @@ class ClaudeAgent:
 
     async def _get_tools(self, session: ClientSession):
         tools = await session.list_tools()
-        claude_tools = []
+        ollama_tools = []
         for t in tools.tools:
             if not t.name.startswith("_"):
-                claude_tools.append(
+                ollama_tools.append(
                     {
-                        "name": t.name,
-                        "description": t.description,
-                        "input_schema": t.inputSchema,
+                        "type": "function",
+                        "function": {
+                            "name": t.name,
+                            "description": t.description,
+                            "parameters": t.inputSchema,
+                        },
                     }
                 )
-        return claude_tools
+        return ollama_tools
 
     async def run(self, testCaseJson: str, solutionStr: str):
         async with (
@@ -99,16 +96,13 @@ class ClaudeAgent:
             await self._setup(
                 session=session, testCaseJson=testCaseJson, solutionStr=solutionStr
             )
-            claude_tools = await self._get_tools(session=session)
+            ollama_tools = await self._get_tools(session=session)
 
-            client = AsyncAnthropic(
-                api_key=os.environ["AZURE_ANTHROPIC_API_KEY"],
-                base_url=os.environ["AZURE_ANTHROPIC_ENDPOINT"].rstrip("/"),
-            )
+            client = AsyncClient(host=self.ollama_host)
 
             logger.debug("Starting Agent Loop")
             await self._run_agent_loop(
-                claude_tools=claude_tools, client=client, session=session
+                ollama_tools=ollama_tools, client=client, session=session
             )
 
             await self._debrief(session=session)
@@ -129,63 +123,66 @@ class ClaudeAgent:
         await self._get_update_dto_list(session=session)
 
     async def _get_model_response(
-        self, client: AsyncAnthropic, claude_tools: List
-    ) -> Message:
+        self, client: AsyncClient, ollama_tools: List
+    ) -> dict:
         logger.debug("calling Model")
-        create_kwargs = dict(
+        response = await client.chat(
             model=self.model,
-            max_tokens=self.max_tokens,
-            temperature=self.temperature,
-            tools=claude_tools,
             messages=self.messages,
+            tools=ollama_tools,
+            options={
+                "num_predict": self.max_tokens,
+                "temperature": self.temperature,
+            },
         )
-        if self.system_prompt:
-            create_kwargs["system"] = self.system_prompt
-        return await client.messages.create(**create_kwargs)
+        return response
 
     async def _run_agent_loop(
-        self, client: AsyncAnthropic, claude_tools: List, session: ClientSession
+        self, client: AsyncClient, ollama_tools: List, session: ClientSession
     ) -> None:
         number_of_calls = 0
         while number_of_calls < self.max_number_of_turns:
             number_of_calls += 1
 
             response = await self._get_model_response(
-                client=client, claude_tools=claude_tools
+                client=client, ollama_tools=ollama_tools
             )
 
-            self.messages.append({"role": "assistant", "content": response.content})
+            assistant_message = {
+                "role": "assistant",
+                "content": response.message.content,
+            }
+            if response.message.tool_calls:
+                assistant_message["tool_calls"] = [
+                    {
+                        "function": {
+                            "name": tc.function.name,
+                            "arguments": tc.function.arguments,
+                        }
+                    }
+                    for tc in response.message.tool_calls
+                ]
+            self.messages.append(assistant_message)
 
-            # Check if there are any tool_use blocks (regardless of stop_reason)
-            tool_use_blocks = [
-                block for block in response.content if block.type == "tool_use"
-            ]
-
-            if tool_use_blocks:
-                tool_results = []
-                for block in tool_use_blocks:
-                    logger.info(f"Calling tool: {block.name}({block.input})")
-                    self.tools_called.append(
-                        f"Calling tool: {block.name}({block.input})"
-                    )
-                    result = await session.call_tool(block.name, arguments=block.input)
-                    tool_results.append(
+            if response.message.tool_calls:
+                for tc in response.message.tool_calls:
+                    tool_name = tc.function.name
+                    tool_args = tc.function.arguments
+                    logger.info(f"Calling tool: {tool_name}({tool_args})")
+                    self.tools_called.append(f"Calling tool: {tool_name}({tool_args})")
+                    result = await session.call_tool(tool_name, arguments=tool_args)
+                    self.messages.append(
                         {
-                            "type": "tool_result",
-                            "tool_use_id": block.id,
+                            "role": "tool",
                             "content": str(result),
                         }
                     )
-                self.messages.append({"role": "user", "content": tool_results})
             elif (
-                len(response.content) > 0
-                and response.content[0].type == "text"
-                and "TASK_COMPLETE" in response.content[0].text
+                response.message.content and "TASK_COMPLETE" in response.message.content
             ):
                 logger.info("Breaking early")
                 break
             else:
-                # No tool calls — the model considers the task complete
                 self.messages.append({"role": "user", "content": "continue"})
                 continue
 

@@ -1,0 +1,84 @@
+{
+  "prior": {
+    "titleType": {
+      "overall": 0.0,
+      "confusion_matrix": {
+        "true_positiv": 0,
+        "true_negativ": 0,
+        "false_positive": 0,
+        "false_negative": 37,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f_one_score": 0.0
+      }
+    },
+    "title": {
+      "overall": 0.10810810810810811,
+      "confusion_matrix": {
+        "true_positiv": 0,
+        "true_negativ": 4,
+        "false_positive": 0,
+        "false_negative": 33,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f_one_score": 0.0
+      }
+    },
+    "deletion": {
+      "overall": 1.0,
+      "confusion_matrix": {
+        "true_positiv": 0,
+        "true_negativ": 37,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f_one_score": 0.0
+      }
+    },
+    "invalidTransitionRate": 0.0,
+    "totalSections": 37
+  },
+  "posterior": {
+    "titleType": {
+      "overall": 0.918918918918919,
+      "confusion_matrix": {
+        "true_positiv": 34,
+        "true_negativ": 0,
+        "false_positive": 2,
+        "false_negative": 1,
+        "precision": 0.9444444444444444,
+        "recall": 0.9714285714285714,
+        "f_one_score": 0.9577464788732394
+      }
+    },
+    "title": {
+      "overall": 0.17142857142857143,
+      "confusion_matrix": {
+        "true_positiv": 4,
+        "true_negativ": 1,
+        "false_positive": 32,
+        "false_negative": 0,
+        "precision": 0.1111111111111111,
+        "recall": 1.0,
+        "f_one_score": 0.2
+      }
+    },
+    "deletion": {
+      "overall": 1.0,
+      "confusion_matrix": {
+        "true_positiv": 0,
+        "true_negativ": 35,
+        "false_positive": 2,
+        "false_negative": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f_one_score": 0.0
+      }
+    },
+    "invalidTransitionRate": 0.05405405405405406,
+    "totalSections": 35
+  },
+  "sectionsToDelete": 0,
+  "sectionWithUpdates": 37
+}
