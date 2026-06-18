@@ -7,7 +7,25 @@ services:
     ports:
       - "8080:8080"
     env_file:
+      - .serverenv
+    restart: unless-stopped
+
+  ait-mcp:
+    image: ait-mcp:latest
+    container_name: ait-mcp
+    ports:
+      - "8000:8000"
+    env_file:
       - .env
+    restart: unless-stopped
+
+  ollama:
+    image: ollama/ollama:latest
+    container_name: ollama
+    ports:
+      - "11434:11434"
+    volumes:
+      - ollama_data:/root/.ollama
     restart: unless-stopped
 
   jaeger:
@@ -17,3 +35,6 @@ services:
       - "16686:16686" # UI
       - "4317:4317" # OTLP gRPC
     restart: unless-stopped
+
+volumes:
+  ollama_data:

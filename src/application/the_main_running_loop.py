@@ -11,18 +11,21 @@ from src.llm.agents.manual_agent import ClaudeAgent
 from src.llm.agents.ollama_agent import OllamaAgent
 from src.model.prompting.prompting_coalition import PromptingCoalition
 from src.singel_worker import update_testcase_single_agent
-from src.utilities.agent_testing.test_utilities import (createOrExtendResult,
-                                                        getPromptingMatrix,
-                                                        getPromptingStrategies)
+from src.utilities.agent_testing.test_utilities import (
+    createOrExtendResult,
+    getPromptingMatrix,
+    getPromptingStrategies,
+)
 
 evaluating_testcase_name = "test-case-id-126-rev-3-dbid-1989.automate.json"
-useAnthropic = True
-agentModel = "claude-opus-4-6"  # "claude-opus-4-6"  # "claude-haiku-4-5"
+useAnthropic = False
+agentModel = "claude-opus-4-6"
 
 
-async def main():
+async def the_main_running_loop():
     load_dotenv()
-    os.environ["LOG_FILE"] = str(getRootPath().joinpath("logs"))
+    useAnthropic = os.getenv("USE_ANTHROPIC") == "true"
+    agentModel = os.getenv("AGENT_MODEL", "claude-opus-4-6")
     setup_logging()
 
     mainPath = getRootPath()
@@ -36,8 +39,7 @@ async def main():
             solutionPath = mainPath.joinpath("data", "solutions", filename)
             resultPath = mainPath.joinpath("data", "results", filename[:-5])
             if os.path.isfile(filepath) and os.path.isfile(solutionPath):
-                for coalition in getPromptingMatrix(promptingStragegies)[15:16]:
-                    
+                for coalition in getPromptingMatrix(promptingStragegies)[15:18]:
                     await _run_manual_agent(
                         filepath,
                         solutionPath,
@@ -82,10 +84,10 @@ async def _run_manual_agent(
 
     if useAnthropic:
         ai_agent = ClaudeAgent(
-            messages=messages, max_number_of_turns=5, model=agentModel
+            messages=messages, max_number_of_turns=1, model=agentModel
         )
     else:
-        ai_agent = OllamaAgent(messages=messages)
+        ai_agent = OllamaAgent(messages=messages, max_number_of_turns=3)
     await ai_agent.run(testCaseJson=testCaseString, solutionStr=solutionString)
     if ai_agent.latest_test_case_json:
         test_case_path = resultpath.joinpath(filename)
@@ -98,7 +100,3 @@ async def _run_manual_agent(
             coalition=coalition,
             resultpath=results_metrics_path,
         )
-
-
-if __name__ == "__main__":
-    asyncio.run(main())

@@ -2,14 +2,21 @@ import asyncio
 import json
 import logging
 import os
+import time
 from typing import List, Optional
 
 from anthropic import AsyncAnthropic
 from pydantic import ValidationError
 
+from src.llm.agents.base_agent import BaseAgent
+from src.model.result.test_stats import TestStats
+from src.model.websocket.websocket_message_type import WebSocketMessageType
+from src.model.websocket.websocket_send_dto import WebSocketSendDTO
+from src.utilities.agent_testing.test_utilities import getReducedTestcaseFromCall
+
 logger = logging.getLogger(__name__)
 
-from anthropic.types import Message
+from anthropic.types import Message, TextBlock, ToolUseBlock
 from mcp import ClientSession, StdioServerParameters
 from mcp.client.stdio import stdio_client
 from mcp.client.streamable_http import streamable_http_client
@@ -20,7 +27,7 @@ from src.utilities.telemetry.telemetry import Telemetry
 from src.utilities.telemetry.trace_provider import TraceProvider
 
 
-class ClaudeAgent:
+class ClaudeAgent(BaseAgent):
     def __init__(
         self,
         messages: list,
@@ -28,10 +35,15 @@ class ClaudeAgent:
         max_tokens: int = 500,
         temperature: float = 0,
         max_number_of_turns: int = 10,
-        mcp_http: str = "http://127.0.0.1:8000/mcp",
-        with_trace_provicer: bool = False,
-        chatty: bool = False,
+        on_progress=None,
     ):
+        super().__init__(
+            model=model,
+            max_tokens=max_tokens,
+            temperature=temperature,
+            max_number_of_turns=max_number_of_turns,
+            on_progress=on_progress,
+        )
         # Anthropic requires system prompt as a separate parameter, not in messages
         self.system_prompt = None
         self.messages = []
@@ -40,42 +52,6 @@ class ClaudeAgent:
                 self.system_prompt = msg["content"]
             else:
                 self.messages.append(msg)
-        self.model = model
-        self.max_tokens = max_tokens
-        self.temperature = temperature
-        self.max_number_of_turns = max_number_of_turns
-        self.mcp_http = mcp_http
-        self.with_trace_provider = with_trace_provicer
-        self.results = {}
-        self.tools_called = []
-        self.latest_test_case_json: Optional[str] = None
-        self.updateDtoList: Optional[List[UpdateDTOList]] = None
-        self.chatty = chatty
-
-    async def _setup(self, session: ClientSession, testCaseJson: str, solutionStr: str):
-        await session.initialize()
-        if self.with_trace_provider:
-            logger.info("Setting trace provider")
-            tracer_provider = TraceProvider.set_trace_provider()
-            Telemetry.setup(tracer_provider=tracer_provider, capture_messages=True)
-
-        logger.info("Setting Testcase")
-        await session.call_tool(
-            "_load_testcase", arguments={"testcaseAsString": testCaseJson}
-        )
-
-        logger.info("Setting solution")
-        await session.call_tool(
-            "_load_solution", arguments={"solutionAsString": solutionStr}
-        )
-        logger.info("getting current test case json")
-        self.latest_test_case_json = await session.call_tool("get_current_testcase")
-
-    def _response_has_text(self, response: Optional[CallToolResult]) -> bool:
-        if not response or not response.content or len(response.content) < 1:
-            logger.warning("Response entity has no text.")
-            return False
-        return True
 
     async def _get_tools(self, session: ClientSession):
         tools = await session.list_tools()
@@ -96,42 +72,39 @@ class ClaudeAgent:
             streamable_http_client(self.mcp_http) as (read, write, _),
             ClientSession(read, write) as session,
         ):
+            logger.info("Setup Agent")
             await self._setup(
                 session=session, testCaseJson=testCaseJson, solutionStr=solutionStr
             )
+            logger.info("Setup complete")
+            logger.info("Get tools")
             claude_tools = await self._get_tools(session=session)
 
+            logger.info("Create client")
             client = AsyncAnthropic(
                 api_key=os.environ["AZURE_ANTHROPIC_API_KEY"],
                 base_url=os.environ["AZURE_ANTHROPIC_ENDPOINT"].rstrip("/"),
+            )
+
+            await self.emit_progress(
+                WebSocketSendDTO(
+                    type=WebSocketMessageType.THINKING, content="Agent setup complete."
+                )
             )
 
             logger.debug("Starting Agent Loop")
             await self._run_agent_loop(
                 claude_tools=claude_tools, client=client, session=session
             )
-
+            logger.debug("Debriefing Agent")
             await self._debrief(session=session)
-
-    async def _debrief(self, session: ClientSession) -> None:
-
-        accuracy_afterwards = await session.call_tool("_get_result_metrics")
-        if self._response_has_text(accuracy_afterwards):
-            try:
-                self.results = json.loads(accuracy_afterwards.content[0].text)
-            except json.JSONDecodeError as e:
-                logger.error(f"Error in geting results, {e}")
-
-        latest = await session.call_tool("get_current_testcase")
-        if self._response_has_text(latest):
-            self.latest_test_case_json = latest.content[0].text
-
-        await self._get_update_dto_list(session=session)
 
     async def _get_model_response(
         self, client: AsyncAnthropic, claude_tools: List
     ) -> Message:
-        logger.debug("calling Model")
+        logger.debug("---calling Model with---")
+        if len(self.messages) > 0:
+            logger.debug(f"{self.messages[-1]}")
         create_kwargs = dict(
             model=self.model,
             max_tokens=self.max_tokens,
@@ -141,7 +114,21 @@ class ClaudeAgent:
         )
         if self.system_prompt:
             create_kwargs["system"] = self.system_prompt
-        return await client.messages.create(**create_kwargs)
+        response = await client.messages.create(**create_kwargs)
+
+        self._log_model_response(response)
+
+        return response
+
+    def _log_model_response(self, response: Message) -> None:
+        if not response:
+            logger.warning("Got a null response.")
+            return
+        if response.role:
+            logger.debug("Role: %s", response.role)
+        for content in response.content:
+            if isinstance(content, TextBlock):
+                logger.debug("Text: %s", content.text)
 
     async def _run_agent_loop(
         self, client: AsyncAnthropic, claude_tools: List, session: ClientSession
@@ -156,6 +143,14 @@ class ClaudeAgent:
 
             self.messages.append({"role": "assistant", "content": response.content})
 
+            for content in response.content:
+                if content and content.type == "text":
+                    await self.emit_progress(
+                        WebSocketSendDTO(
+                            type=WebSocketMessageType.THINKING, content=content.text
+                        )
+                    )
+
             # Check if there are any tool_use blocks (regardless of stop_reason)
             tool_use_blocks = [
                 block for block in response.content if block.type == "tool_use"
@@ -169,6 +164,8 @@ class ClaudeAgent:
                         f"Calling tool: {block.name}({block.input})"
                     )
                     result = await session.call_tool(block.name, arguments=block.input)
+                    if block.name == "get_current_testcase":
+                        result = getReducedTestcaseFromCall(result)
                     tool_results.append(
                         {
                             "type": "tool_result",
@@ -183,23 +180,8 @@ class ClaudeAgent:
                 and "TASK_COMPLETE" in response.content[0].text
             ):
                 logger.info("Breaking early")
+                self.return_message = response.content[0].text
                 break
             else:
-                # No tool calls — the model considers the task complete
                 self.messages.append({"role": "user", "content": "continue"})
                 continue
-
-    async def _get_update_dto_list(self, session: ClientSession) -> None:
-        response = await session.call_tool("_get_changes")
-
-        if self._response_has_text(response):
-            updateDTOListAsString = response.content[0].text
-            logger.info("UpdateDTOList retrieved: ")
-            logger.info(updateDTOListAsString)
-            try:
-                self.updateDtoList = UpdateDTOList.model_validate_json(
-                    updateDTOListAsString
-                )
-            except ValidationError:
-                logger.error(f"Failed to parse UpdateDTOList: {updateDTOListAsString}")
-                self.updateDtoList = None
