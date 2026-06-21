@@ -12,3 +12,9 @@ resolve dns manually: nslookup nickel.fhgr.ch
 start tool inspector: npx @modelcontextprotocol/inspector (nvm use 23.11.0)
 
 start server: uvicorn server:app --reload --port 8080
+
+push to dockerhub:
+docker tag aitagent adijida/aitagent:latest
+docker push adijida/aitagent:latest
+
+login: docker login

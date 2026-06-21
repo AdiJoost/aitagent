@@ -133,12 +133,11 @@ async def ws_run(websocket: WebSocket):
             {
                 "role": "system",
                 "content": (
-                    "You are an expert test designer. You modify testcases using MCP tool calls.\n"
+                    "You are an expert test designer. You modify testcases using MCP tool calls and give feedback to the user.\n"
                     "IMPORTANT: You MUST use tool calls to interact with the testcase.\n"
                     "1. First call 'get_current_testcase' to see the current state.\n"
-                    "2. Then use the appropriate MCP tools to make changes.\n"
-                    "Never write code. Always use the provided tool calls. Do not use tools that start with _. "
-                    "Do not provide an explenation, just prompt the tools to execute."
+                    "2. Then use the appropriate MCP tools to make changes or give feedback to the user.\n"
+                    "Never write code. Always use the provided tool calls. "
                     "When the task is complete, answere with TASK_COMPLETE. "
                     "Only use ANSWERE_COMPLETE, when you are complete, do not add id in any other instance."
                 ),

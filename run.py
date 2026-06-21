@@ -7,17 +7,24 @@ from dotenv import load_dotenv
 
 from config.loggingSetup import setup_logging
 from config.rootPath import getRootPath
+from src.application.the_main_running_loop import the_main_running_loop
 from src.llm.agents.manual_agent import ClaudeAgent
 from src.llm.agents.ollama_agent import OllamaAgent
 from src.model.prompting.prompting_coalition import PromptingCoalition
 from src.singel_worker import update_testcase_single_agent
-from src.utilities.agent_testing.test_utilities import (createOrExtendResult,
-                                                        getPromptingMatrix,
-                                                        getPromptingStrategies)
+from src.utilities.agent_testing.test_utilities import (
+    createOrExtendResult,
+    getPromptingMatrix,
+    getPromptingStrategies,
+)
 
 evaluating_testcase_name = "test-case-id-126-rev-3-dbid-1989.automate.json"
 useAnthropic = True
 agentModel = "claude-opus-4-6"  # "claude-opus-4-6"  # "claude-haiku-4-5"
+
+
+async def run_loop():
+    await the_main_running_loop()
 
 
 async def main():
@@ -37,7 +44,6 @@ async def main():
             resultPath = mainPath.joinpath("data", "results", filename[:-5])
             if os.path.isfile(filepath) and os.path.isfile(solutionPath):
                 for coalition in getPromptingMatrix(promptingStragegies)[15:16]:
-                    
                     await _run_manual_agent(
                         filepath,
                         solutionPath,
@@ -101,4 +107,4 @@ async def _run_manual_agent(
 
 
 if __name__ == "__main__":
-    asyncio.run(main())
+    asyncio.run(run_loop())

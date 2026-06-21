@@ -8,6 +8,8 @@ services:
       - "8080:8080"
     env_file:
       - .serverenv
+    volumes:
+      - ./data:/aitagent/data
     restart: unless-stopped
 
   ait-mcp:

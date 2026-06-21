@@ -12,7 +12,8 @@ from src.llm.agents.base_agent import BaseAgent
 from src.model.result.test_stats import TestStats
 from src.model.websocket.websocket_message_type import WebSocketMessageType
 from src.model.websocket.websocket_send_dto import WebSocketSendDTO
-from src.utilities.agent_testing.test_utilities import getReducedTestcaseFromCall
+from src.utilities.agent_testing.test_utilities import \
+    getReducedTestcaseFromCall
 
 logger = logging.getLogger(__name__)
 
@@ -144,6 +145,9 @@ class ClaudeAgent(BaseAgent):
             self.messages.append({"role": "assistant", "content": response.content})
 
             for content in response.content:
+                logger.debug("Response content: type=%s, content=%s", content.type, content)
+
+            for content in response.content:
                 if content and content.type == "text":
                     await self.emit_progress(
                         WebSocketSendDTO(
@@ -163,7 +167,25 @@ class ClaudeAgent(BaseAgent):
                     self.tools_called.append(
                         f"Calling tool: {block.name}({block.input})"
                     )
-                    result = await session.call_tool(block.name, arguments=block.input)
+                    if block.name == "send_user_message":
+                        msg = (block.input.get("message") or "").strip()
+                        if msg:
+                            await self.emit_progress(WebSocketSendDTO(
+                                type=WebSocketMessageType.USER_MESSAGE,
+                                content=response.content[0].text,
+                            ))
+                            result = "message sent to user."
+                        else:
+                            try:
+                                await self.emit_progress(WebSocketSendDTO(
+                                type=WebSocketMessageType.USER_MESSAGE,
+                                content=block.input.get("message", ""),
+                                ))
+                                result = "message sent to user."
+                            except:
+                                result = "Error: message must not be empty"
+                    else:
+                        result = await session.call_tool(block.name, arguments=block.input)
                     if block.name == "get_current_testcase":
                         result = getReducedTestcaseFromCall(result)
                     tool_results.append(
@@ -185,3 +207,16 @@ class ClaudeAgent(BaseAgent):
             else:
                 self.messages.append({"role": "user", "content": "continue"})
                 continue
+
+    def _get_message_tool(self) -> any:
+        return {
+           "name": "send_user_message",
+            "description": "Send a message to the user when you have an interesting finding, insight, or need to communicate something noteworthy. Use sparingly — only for information the user would genuinely want to see. Include the message formatted in md and use the md in the function call.",
+            "input_schema": {
+                "type": "object",
+                "properties": {
+                    "message": {"type": "string", "description": "The message to display to the user."}
+                },
+                "required": ["message"], 
+            }
+        }

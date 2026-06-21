@@ -1,0 +1,10 @@
+.env
+.serverenv
+data/
+logs/
+volumes/
+apptainerdata/
+*.sif
+.venv/
+__pycache__/
+jupiternotebooks/
