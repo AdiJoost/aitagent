@@ -1,0 +1,9 @@
+ag2[tracing, browser-use, anthropic, duckduckgo, mcp]==0.11.2
+python-dotenv==1.2.2
+ollama==0.6.1
+fix-busted-json==0.0.19
+ddgs
+fastapi>=0.115.0
+uvicorn>=0.34.0
+sse-starlette>=2.1.0
+websockets>=12.0
