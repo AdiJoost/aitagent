@@ -14,10 +14,10 @@ echo "Building Ollama image..."
 SINGULARITY_DISABLE_CACHE=True apptainer build --force ollama.sif docker://ollama/ollama
 
 echo "Building aitagent image..."
-SINGULARITY_DISABLE_CACHE=True apptainer build --force aitagent.sif docker://adijida/aitagent:latest
+SINGULARITY_DISABLE_CACHE=True apptainer build --force aitagent.sif docker://ajoostham/aitagent:latest
 
 echo "Building ait-mcp image..."
-SINGULARITY_DISABLE_CACHE=True apptainer build --force ait-mcp.sif docker://adijida/ait-mcp:latest
+SINGULARITY_DISABLE_CACHE=True apptainer build --force ait-mcp.sif docker://ajoostham/ait-mcp:latest
 
 echo "Building Jaeger image..."
 SINGULARITY_DISABLE_CACHE=True apptainer build --force jaeger.sif docker://jaegertracing/jaeger:latest
