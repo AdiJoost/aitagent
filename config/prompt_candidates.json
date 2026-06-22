@@ -21,7 +21,7 @@
     "id": 4,
     "name": "Contrastive Chain-of-Thought",
     "abbreviation": "CCoT",
-    "prompt": "TBD"
+    "prompt": "When Section title with header 1 is <Peep = 5> and the next section is Standard with <....(Exec)Peep = 5>, changing the second title to Peep = 5 and leaving it standard is wrong. Correct answere: Call the tool to change the titleType to <TITLE_HEADER_2> and the title to <Execution>."
   },
   {
     "id": 5,
