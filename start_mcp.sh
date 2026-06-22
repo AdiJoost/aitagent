@@ -13,7 +13,7 @@ apptainer exec \
   --env-file "$AITAGENT_DIR/.env" \
   --pwd /ait-mcp \
   ait-mcp.sif \
-  python -m uvicorn run:app --host 0.0.0.0 --port 8000 &
+  python run.py &
 
 MCP_PID=$!
 
