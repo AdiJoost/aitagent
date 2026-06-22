@@ -72,7 +72,7 @@ class OllamaAgent(BaseAgent):
 
     async def run(self, testCaseJson: str, solutionStr: str):
         async with (
-            streamable_http_client(self.mcp_http) as (read, write, _),
+            streamable_http_client(f"{self.mcp_http}/mcp") as (read, write, _),
             ClientSession(read, write) as session,
         ):
             logger.info("Setup Agent")
