@@ -1,0 +1,2028 @@
+{
+  "testSectionsUpdates": [
+    {
+      "sectionId": 4498,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "General Setup",
+        "titleType": "TITLE_HEADER_1"
+      }
+    },
+    {
+      "sectionId": 4499,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Set ASL",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 4500,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Set Patient Adult",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 4501,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "1. Measurement",
+        "titleType": "TITLE_HEADER_1"
+      }
+    },
+    {
+      "sectionId": 4677,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "ASL",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 4502,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Setup",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 4503,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "FIO2 = 21%",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 4504,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Execution",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4505,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Evaluation",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4506,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "FIO2 = 40%",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 4507,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Execution",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4508,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Evaluation",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4674,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "FIO2 = 60%",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 4509,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Execution",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4510,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Evaluation",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4675,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "FIO2 = 95%",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 4511,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Execution",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4512,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Evaluation",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4676,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "FIO2 = 100%",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 4513,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Execution",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4514,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Evaluation",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4515,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "CleanUp",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 4516,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "2. Measurement",
+        "titleType": "TITLE_HEADER_1"
+      }
+    },
+    {
+      "sectionId": 4517,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "ASLl",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 4518,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Setup",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 4679,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "FIO2 = 21%",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 4678,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Execution",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4519,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Evaluation",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4680,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "FIO2 = 40%",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 4520,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Execution",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4521,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Evaluation",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4681,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "FIO2 = 60%",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 4522,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Execution",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4523,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Evaluation",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4682,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "FIO2 = 95%",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 4524,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Execution",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4525,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Evaluation",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4683,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "FIO2 = 100%",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 4526,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Execution",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4527,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Evaluation",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4528,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Stop ventilation",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 4529,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "3. Measurement",
+        "titleType": "TITLE_HEADER_1"
+      }
+    },
+    {
+      "sectionId": 4530,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "ASL",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 4531,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Setup",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 4684,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "FIO2 = 21%",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 4689,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Execution",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4532,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Evaluation",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4685,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "FIO2 = 40%",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 4533,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Execution",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4534,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Evaluation",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4686,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "FIO2 = 60%",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 4535,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Execution",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4536,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Evaluation",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4687,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "FIO2 = 95%",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 4537,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Execution",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4538,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Evaluation",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4688,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "FIO2 = 100%",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 4539,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Execution",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4540,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Evaluation",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4541,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "CleanUp",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 4542,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "4. Measurement",
+        "titleType": "TITLE_HEADER_1"
+      }
+    },
+    {
+      "sectionId": 4543,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "ASL",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 4544,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Setup",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 4690,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "FIO2 = 21%",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 4691,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Execution",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4545,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Evaluation",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4692,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "FIO2 = 40%",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 4546,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Execution",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4547,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Evaluation",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4693,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "FIO2 = 60%",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 4548,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Execution",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4549,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Execution",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4694,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "FIO2 = 21%",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 4550,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Execution",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4551,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Evaluation",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4695,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "FIO2 = 100%",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 4552,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Execution",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4553,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Evaluation",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4554,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "CleanUp",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 4555,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "5. Measurement",
+        "titleType": "TITLE_HEADER_1"
+      }
+    },
+    {
+      "sectionId": 4556,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "ASL",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 4557,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Setup",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 4696,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "FIO2 = 21%",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 4697,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Execution",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4558,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Evaluation",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4698,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "FIO2 = 40%",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 4559,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Execution",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4560,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Execution",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4699,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "FIO2 = 60%",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 4561,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Execution",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4562,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Execution",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4700,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "FIO2 = 95%",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 4563,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Execution",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4564,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Evaluation",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4701,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "FIO2 = 21%",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 4565,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Execution",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4566,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Evaluation",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4566,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "CleanUp",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 4568,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "6. Measurement",
+        "titleType": "TITLE_HEADER_1"
+      }
+    },
+    {
+      "sectionId": 4569,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "ASL",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 4570,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Setup",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 4703,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "FIO2 = 21%",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 4702,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Execution",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4571,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Evaluation",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4704,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "FIO2 = 40%",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 4572,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Execution",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4573,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Evaluation",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4705,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "FIO2 = 60%",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 4574,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Execution",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4575,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Evaluation",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4706,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "FIO2 = 95%",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 4576,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Execution",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4577,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Evaluation",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4707,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "FIO2 = 100%",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 4578,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Execution",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4579,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Evaluation",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4580,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "CleanUp",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 4581,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "7. Measurement",
+        "titleType": "TITLE_HEADER_1"
+      }
+    },
+    {
+      "sectionId": 4582,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "ASL",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 4583,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Setup",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 4708,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "FIO2 = 21%",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 4709,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Execution",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4584,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Evaluation",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4710,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "FIO2 = 40%",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 4585,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Execution",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4586,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Evaluation",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4711,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "FIO2 = 60%",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 4587,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Execution",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4588,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Evaluation",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4712,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "FIO2 = 95%",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 4589,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Execution",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4590,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Evaluation",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4713,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "FIO2 = 100%",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 4591,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Execution",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4592,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Evaluation",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4593,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "CleanUp",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 4594,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "8. Measurement",
+        "titleType": "TITLE_HEADER_1"
+      }
+    },
+    {
+      "sectionId": 4595,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "ASL",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 4596,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Setup",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 4714,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "FIO2 = 21%",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 4715,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Execution",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4597,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Evaluation",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4716,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "FIO2 = 40%",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 4598,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Execution",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4599,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Evaluation",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4717,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "FIO2 = 60%",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 4600,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Execution",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4601,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Evaluation",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4718,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "FIO2 = 95%",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 4602,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Execution",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4603,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Evaluation",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4719,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "FIO2 = 100%",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 4604,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Execution",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4605,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Evaluation",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4606,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "CleanUp",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 4607,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "9. Measurement",
+        "titleType": "TITLE_HEADER_1"
+      }
+    },
+    {
+      "sectionId": 4608,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "ASL",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 4609,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Setup",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 4720,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "FIO2 = 21%",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 4721,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Execution",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4610,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Evaluation",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4722,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "FIO2 = 40%",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 4611,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Execution",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4612,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Evaluation",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4723,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "FIO2 = 60%",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 4613,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Execution",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4614,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Evaluation",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4724,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "FIO2 = 95%",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 4615,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Execution",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4616,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Evaluation",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4725,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "FIO2 = 100%",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 4617,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Execution",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4618,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Evaluation",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4619,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "CleanUp",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 4620,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "10. Measurement",
+        "titleType": "TITLE_HEADER_1"
+      }
+    },
+    {
+      "sectionId": 4621,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "ASL",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 4622,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Setup",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 4726,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "FIO2 = 21%",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 4727,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Execution",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4623,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Evaluation",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4728,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "FIO2 = 40%",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 4624,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Execution",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4625,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Evaluation",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4729,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "FIO2 = 60%",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 4626,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Execution",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4627,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Evaluation",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4730,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "FIO2 = 95%",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 4628,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Execution",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4629,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Evaluation",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4731,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "FIO2 = 100%",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 4630,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Execution",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4631,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Evaluation",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4632,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "CleanUp",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 4633,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "11. Measurement",
+        "titleType": "TITLE_HEADER_1"
+      }
+    },
+    {
+      "sectionId": 4634,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "ASL",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 4635,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Setup",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 4732,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "FIO2 = 21%",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 4733,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Execution",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4636,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Evaluation",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4734,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "FIO2 = 40%",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 4637,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Execution",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4638,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Evaluation",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4735,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "FIO2 = 60%",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 4639,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Execution",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4640,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Evaluation",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4736,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "FIO2 = 95%",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 4641,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Execution",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4642,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Evaluation",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4737,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "FIO2 = 100%",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 4643,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Execution",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4644,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Evaluation",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4645,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "CleanUp",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 4646,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "12. Measurement",
+        "titleType": "TITLE_HEADER_1"
+      }
+    },
+    {
+      "sectionId": 4647,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "ASL",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 4648,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Setup",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 4738,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "FIO2 = 21%",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 4739,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Execution",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4649,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Evaluation",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4740,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "FIO2 = 40%",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 4650,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Execution",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4651,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Evaluation",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4741,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "FIO2 = 60%",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 4652,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Execution",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4653,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Evaluation",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4742,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "FIO2 = 95%",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 4654,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Execution",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4655,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Evaluation",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4743,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "FIO2 = 100%",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 4656,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Execution",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4657,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Evaluation",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4658,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "CleanUp",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 4659,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "13. Measurement",
+        "titleType": "TITLE_HEADER_1"
+      }
+    },
+    {
+      "sectionId": 4660,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "ASL",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 4661,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Setup",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 4744,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "FIO2 = 21%",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 4745,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Execution",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4662,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Evaluation",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4746,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "FIO2 = 40%",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 4663,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Execution",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4664,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Evaluation",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4747,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "FIO2 = 60%",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 4665,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Execution",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4666,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Evaluation",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4748,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "FIO2 = 95%",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 4667,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Execution",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4668,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Evaluation",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4749,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "FIO2 = 100%",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 4669,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Execution",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4670,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Evaluation",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4671,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "CleanUp",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 4672,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "General CleanUp",
+        "titleType": "TITLE_HEADER_1"
+      }
+    },
+    {
+      "sectionId": 4673,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Clean ventilation",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 4750,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Clean ASL",
+        "titleType": "TITLE_HEADER_2"
+      }
+    }
+  ]
+}

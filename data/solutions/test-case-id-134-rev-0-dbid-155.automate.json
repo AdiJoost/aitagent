@@ -1,0 +1,249 @@
+{
+  "testSectionsUpdates": [
+    {
+      "sectionId": 5939,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Timing Values: Minimum expiration time",
+        "titleType": "TITLE_HEADER_1"
+      }
+    },
+    {
+      "sectionId": 5940,
+      "changeType": "DELETE",
+      "sectionDTO": {}
+    },
+    {
+      "sectionId": 5941,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Timing Values: Minimum expiration time",
+        "titleType": "TITLE_HEADER_1"
+      }
+    },
+    {
+      "sectionId": 5943,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "General Setup",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 5944,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Set ASL",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 5945,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Set patient adult/male",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 5946,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Set Alarms",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 5948,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "TexpMin = minimum",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 5949,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "ASL",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 5950,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Setup",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 5951,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Execution",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 5952,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Scripting",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 5953,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Evaluation",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 5954,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "CleanUp",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 5956,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "TexpMin = maximum",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 5957,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "ASL",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 5958,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Setup",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 5959,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Execution",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 5960,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Scripting",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 5961,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Evaluation",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 5962,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "CleanUp",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 5964,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "TexpMin = additional value",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 5965,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "ASL",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 5966,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Setup",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 5967,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Execution",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 5968,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Scripting",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 5969,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Evaluation",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 5970,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "CleanUp",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 5973,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "General CleanUp",
+        "titleType": "TITLE_HEADER_1"
+      }
+    },
+    {
+      "sectionId": 5974,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Stop ventilation",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 5975,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Clean ASL",
+        "titleType": "TITLE_HEADER_2"
+      }
+    }
+  ]
+}

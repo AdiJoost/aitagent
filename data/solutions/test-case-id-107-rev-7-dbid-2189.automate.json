@@ -1,0 +1,1172 @@
+{
+  "testSectionsUpdates": [
+    {
+      "sectionId": 67905,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Test Preparation",
+        "titleType": "TITLE_HEADER_1"
+      }
+    },
+    {
+      "sectionId": 4124,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "General Setup",
+        "titleType": "TITLE_HEADER_1"
+      }
+    },
+    {
+      "sectionId": 4125,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Set ASL",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 4126,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Set patient neonatal",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 4127,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Set Alarms",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 67906,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Pinsp and PEEP",
+        "titleType": "TITLE_HEADER_1"
+      }
+    },
+    {
+      "sectionId": 4129,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Pinsp = default value, PEEP = default value",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 4130,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "ASL",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4131,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Setup",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4132,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Execution",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4133,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Evaluation",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4134,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "CleanUp",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4135,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Pinsp = minimum, PEEP = maximum",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 4136,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "ASL",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4137,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Setup",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4138,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Execution",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4139,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Evaluation",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4140,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "CleanUp",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4141,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Pinsp = maximum, PEEP = minimum {C1, MR1, T1}",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 4142,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "ASL",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4143,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Setup",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4143,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Execution",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4145,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Evaluation",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4146,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "CleanUp",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4147,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Pinsp = maximum, PEEP = minimum {C3, C6}",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 4148,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "ASL",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4149,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Setup",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4150,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Execution",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4151,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Evaluation",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4152,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "CleanUp",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4153,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Pinsp = additional value, PEEP = additional value",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 4154,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "ASL",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4155,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Setup",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4156,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Execution",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4157,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Evaluation",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4158,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "CleanUp",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 67907,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Rate and Inspiration Time with TI-Philosophy",
+        "titleType": "TITLE_HEADER_1"
+      }
+    },
+    {
+      "sectionId": 4160,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Rate = default value, TI = default value",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 4161,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "ASL",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4162,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Setup",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4163,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Execution",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4164,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Scripting",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4165,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Evaluation",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4166,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "CleanUp",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4167,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Rate = minimum, TI = maximum",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4168,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "ASL",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4169,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Setup",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4170,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Execution",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4171,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Scripting",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4172,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Evaluation",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4173,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "CleanUp",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4174,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Rate = maximum, TI = minimum {C1, MR1, T1}",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 4175,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "ASL",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4176,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Setup",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4177,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Execution",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4178,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Scripting",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4179,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Evaluation",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4180,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "CleanUp",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4181,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Rate = maximum, TI = minimum {C3, C6}",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 4182,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "ASL",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4183,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Setup",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4184,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Execution",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4185,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Scripting",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4186,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Evaluation",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4187,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "CleanUp",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4188,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Rate = additional value, TI = additional value",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 4189,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "ASL",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4190,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Setup",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4191,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Execution",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4192,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Scripting",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4193,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Evaluation",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4194,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "CleanUp",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 86749,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Check Alarm",
+        "titleType": "TITLE_HEADER_1"
+      }
+    },
+    {
+      "sectionId": 86750,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Check Alarm: High Volume  on passive patient",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 86751,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "ASL",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 86752,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Setup",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 86753,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Execution | 1/3",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 86754,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Execution | 2/3",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 86755,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Execution | 3/3",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 86756,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Scripting",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 86757,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Evaluation",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 86758,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "CleanUp",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 67909,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Pinsp and PEEP on active patient",
+        "titleType": "TITLE_HEADER_1"
+      }
+    },
+    {
+      "sectionId": 4228,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Pinsp = default value, PEEP = default value",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 4229,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "ASL",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4230,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Setup",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4231,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Execution",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4232,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Evaluation",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4233,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "CleanUp",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4234,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Pinsp = minimum, PEEP = maximum",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 4235,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "ASL",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4236,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Setup",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4237,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Execution",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4238,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Evaluation",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4239,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "CleanUp",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4240,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Pinsp = maximum, PEEP = minimum {C1, MR1, T1}",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 4241,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "ASL",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4242,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Setup",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4243,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Execution",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4244,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Evaluation",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4245,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "CleanUp",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4246,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Pinsp = maximum, PEEP = minimum {C3, C6}",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 4247,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "ASL",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4248,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Setup",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4249,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Execution",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4250,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Evaluation",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4251,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "CleanUp",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4252,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Pinsp = additional value, PEEP = additional value",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 4253,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "ASL",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4254,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Setup",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4255,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Execution",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4256,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Evaluation",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4257,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "CleanUp",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 75542,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "TexpMin",
+        "titleType": "TITLE_HEADER_1"
+      }
+    },
+    {
+      "sectionId": 75544,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "TexpMin without patient effort",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 75545,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "ASL",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 75546,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Setup",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 75547,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Execution",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 75548,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Scripting",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 75549,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Evaluation",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 75550,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "CleanUp",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 75552,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "TexpMin with patient effort Texp = 0.2s",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 75570,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "ASL",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 75571,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Setup",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 75555,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Execution",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 75556,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Scripting",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 75557,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Evaluation",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 75558,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "CleanUp",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 75560,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "TexpMin with ineffective patient effort Texp = 1.05s",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 75561,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "ASL",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 75572,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Setup",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 75563,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Execution",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 75564,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Scripting",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 75565,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Evaluation",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 75566,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "CleanUp",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 74237,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "TinspMin",
+        "titleType": "TITLE_HEADER_1"
+      }
+    },
+    {
+      "sectionId": 74238,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "TinspMin with patient effort ETS = 80% and Tinsp = 0.3s",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 74239,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "ASL",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 74245,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Setup",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 74241,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Execution",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 74242,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Scripting",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 74243,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Evaluation",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 74244,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "CleanUp",
+        "titleType": "TITLE_HEADER_3"
+      }
+    },
+    {
+      "sectionId": 4268,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "General CleanUp",
+        "titleType": "TITLE_HEADER_1"
+      }
+    },
+    {
+      "sectionId": 4269,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Stop ventilation",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 4270,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Clean ASL",
+        "titleType": "TITLE_HEADER_2"
+      }
+    }
+  ]
+}

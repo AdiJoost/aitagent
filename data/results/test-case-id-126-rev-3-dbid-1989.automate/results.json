@@ -1,0 +1,573 @@
+{
+  "prior": {
+    "titleType": {
+      "overall": 0.0,
+      "confusion_matrix": {
+        "true_positiv": 0,
+        "true_negativ": 0,
+        "false_positive": 0,
+        "false_negative": 37,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f_one_score": 0.0
+      }
+    },
+    "title": {
+      "overall": 0.10810810810810811,
+      "confusion_matrix": {
+        "true_positiv": 0,
+        "true_negativ": 4,
+        "false_positive": 0,
+        "false_negative": 33,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f_one_score": 0.0
+      }
+    },
+    "deletion": {
+      "overall": 1.0,
+      "confusion_matrix": {
+        "true_positiv": 0,
+        "true_negativ": 37,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f_one_score": 0.0
+      }
+    },
+    "invalidTransitionRate": 0.0,
+    "totalSections": 37
+  },
+  "results": [
+    {
+      "metrics": {
+        "titleType": {
+          "overall": 0.0,
+          "confusion_matrix": {
+            "true_positiv": 0,
+            "true_negativ": 0,
+            "false_positive": 0,
+            "false_negative": 37,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f_one_score": 0.0
+          }
+        },
+        "title": {
+          "overall": 0.10810810810810811,
+          "confusion_matrix": {
+            "true_positiv": 0,
+            "true_negativ": 4,
+            "false_positive": 0,
+            "false_negative": 33,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f_one_score": 0.0
+          }
+        },
+        "deletion": {
+          "overall": 1.0,
+          "confusion_matrix": {
+            "true_positiv": 0,
+            "true_negativ": 37,
+            "false_positive": 0,
+            "false_negative": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f_one_score": 0.0
+          }
+        },
+        "invalidTransitionRate": 0.0,
+        "totalSections": 37
+      },
+      "coalition": {
+        "ids": [],
+        "coalitionPrompt": ""
+      }
+    },
+    {
+      "metrics": {
+        "titleType": {
+          "overall": 0.0,
+          "confusion_matrix": {
+            "true_positiv": 0,
+            "true_negativ": 0,
+            "false_positive": 0,
+            "false_negative": 37,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f_one_score": 0.0
+          }
+        },
+        "title": {
+          "overall": 0.10810810810810811,
+          "confusion_matrix": {
+            "true_positiv": 0,
+            "true_negativ": 4,
+            "false_positive": 0,
+            "false_negative": 33,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f_one_score": 0.0
+          }
+        },
+        "deletion": {
+          "overall": 1.0,
+          "confusion_matrix": {
+            "true_positiv": 0,
+            "true_negativ": 37,
+            "false_positive": 0,
+            "false_negative": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f_one_score": 0.0
+          }
+        },
+        "invalidTransitionRate": 0.0,
+        "totalSections": 37
+      },
+      "coalition": {
+        "ids": [
+          1
+        ],
+        "coalitionPrompt": "Let's first understand the problem and devise a plan to solve the problem. Then, let's carry out the plan and solve the problem step by step."
+      }
+    },
+    {
+      "metrics": {
+        "titleType": {
+          "overall": 0.0,
+          "confusion_matrix": {
+            "true_positiv": 0,
+            "true_negativ": 0,
+            "false_positive": 0,
+            "false_negative": 37,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f_one_score": 0.0
+          }
+        },
+        "title": {
+          "overall": 0.10810810810810811,
+          "confusion_matrix": {
+            "true_positiv": 0,
+            "true_negativ": 4,
+            "false_positive": 0,
+            "false_negative": 33,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f_one_score": 0.0
+          }
+        },
+        "deletion": {
+          "overall": 1.0,
+          "confusion_matrix": {
+            "true_positiv": 0,
+            "true_negativ": 37,
+            "false_positive": 0,
+            "false_negative": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f_one_score": 0.0
+          }
+        },
+        "invalidTransitionRate": 0.0,
+        "totalSections": 37
+      },
+      "coalition": {
+        "ids": [],
+        "coalitionPrompt": ""
+      }
+    },
+    {
+      "metrics": {
+        "titleType": {
+          "overall": 0.0,
+          "confusion_matrix": {
+            "true_positiv": 0,
+            "true_negativ": 0,
+            "false_positive": 0,
+            "false_negative": 37,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f_one_score": 0.0
+          }
+        },
+        "title": {
+          "overall": 0.10810810810810811,
+          "confusion_matrix": {
+            "true_positiv": 0,
+            "true_negativ": 4,
+            "false_positive": 0,
+            "false_negative": 33,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f_one_score": 0.0
+          }
+        },
+        "deletion": {
+          "overall": 1.0,
+          "confusion_matrix": {
+            "true_positiv": 0,
+            "true_negativ": 37,
+            "false_positive": 0,
+            "false_negative": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f_one_score": 0.0
+          }
+        },
+        "invalidTransitionRate": 0.0,
+        "totalSections": 37
+      },
+      "coalition": {
+        "ids": [
+          1
+        ],
+        "coalitionPrompt": "Let's first understand the problem and devise a plan to solve the problem. Then, let's carry out the plan and solve the problem step by step."
+      }
+    },
+    {
+      "metrics": {
+        "titleType": {
+          "overall": 0.0,
+          "confusion_matrix": {
+            "true_positiv": 0,
+            "true_negativ": 0,
+            "false_positive": 0,
+            "false_negative": 37,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f_one_score": 0.0
+          }
+        },
+        "title": {
+          "overall": 0.10810810810810811,
+          "confusion_matrix": {
+            "true_positiv": 0,
+            "true_negativ": 4,
+            "false_positive": 0,
+            "false_negative": 33,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f_one_score": 0.0
+          }
+        },
+        "deletion": {
+          "overall": 1.0,
+          "confusion_matrix": {
+            "true_positiv": 0,
+            "true_negativ": 37,
+            "false_positive": 0,
+            "false_negative": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f_one_score": 0.0
+          }
+        },
+        "invalidTransitionRate": 0.0,
+        "totalSections": 37
+      },
+      "coalition": {
+        "ids": [
+          2
+        ],
+        "coalitionPrompt": "Walk me through this context in manageable parts step by step, summarizing and analyzing as we go."
+      }
+    },
+    {
+      "metrics": {
+        "titleType": {
+          "overall": 0.0,
+          "confusion_matrix": {
+            "true_positiv": 0,
+            "true_negativ": 0,
+            "false_positive": 0,
+            "false_negative": 37,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f_one_score": 0.0
+          }
+        },
+        "title": {
+          "overall": 0.10810810810810811,
+          "confusion_matrix": {
+            "true_positiv": 0,
+            "true_negativ": 4,
+            "false_positive": 0,
+            "false_negative": 33,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f_one_score": 0.0
+          }
+        },
+        "deletion": {
+          "overall": 1.0,
+          "confusion_matrix": {
+            "true_positiv": 0,
+            "true_negativ": 37,
+            "false_positive": 0,
+            "false_negative": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f_one_score": 0.0
+          }
+        },
+        "invalidTransitionRate": 0.0,
+        "totalSections": 37
+      },
+      "coalition": {
+        "ids": [
+          3
+        ],
+        "coalitionPrompt": "Think step by step, but only keep a minimum draft for each thinking step, with 5 words at most."
+      }
+    },
+    {
+      "metrics": {
+        "titleType": {
+          "overall": 0.0,
+          "confusion_matrix": {
+            "true_positiv": 0,
+            "true_negativ": 0,
+            "false_positive": 0,
+            "false_negative": 37,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f_one_score": 0.0
+          }
+        },
+        "title": {
+          "overall": 0.10810810810810811,
+          "confusion_matrix": {
+            "true_positiv": 0,
+            "true_negativ": 4,
+            "false_positive": 0,
+            "false_negative": 33,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f_one_score": 0.0
+          }
+        },
+        "deletion": {
+          "overall": 1.0,
+          "confusion_matrix": {
+            "true_positiv": 0,
+            "true_negativ": 37,
+            "false_positive": 0,
+            "false_negative": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f_one_score": 0.0
+          }
+        },
+        "invalidTransitionRate": 0.0,
+        "totalSections": 37
+      },
+      "coalition": {
+        "ids": [
+          2,
+          6
+        ],
+        "coalitionPrompt": "Walk me through this context in manageable parts step by step, summarizing and analyzing as we go. Rephrase and expand the question, and respond."
+      }
+    },
+    {
+      "metrics": {
+        "titleType": {
+          "overall": 0.0,
+          "confusion_matrix": {
+            "true_positiv": 0,
+            "true_negativ": 0,
+            "false_positive": 0,
+            "false_negative": 37,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f_one_score": 0.0
+          }
+        },
+        "title": {
+          "overall": 0.10810810810810811,
+          "confusion_matrix": {
+            "true_positiv": 0,
+            "true_negativ": 4,
+            "false_positive": 0,
+            "false_negative": 33,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f_one_score": 0.0
+          }
+        },
+        "deletion": {
+          "overall": 1.0,
+          "confusion_matrix": {
+            "true_positiv": 0,
+            "true_negativ": 37,
+            "false_positive": 0,
+            "false_negative": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f_one_score": 0.0
+          }
+        },
+        "invalidTransitionRate": 0.0,
+        "totalSections": 37
+      },
+      "coalition": {
+        "ids": [
+          3,
+          4
+        ],
+        "coalitionPrompt": "Think step by step, but only keep a minimum draft for each thinking step, with 5 words at most. TBD"
+      }
+    },
+    {
+      "metrics": {
+        "titleType": {
+          "overall": 0.0,
+          "confusion_matrix": {
+            "true_positiv": 0,
+            "true_negativ": 0,
+            "false_positive": 0,
+            "false_negative": 37,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f_one_score": 0.0
+          }
+        },
+        "title": {
+          "overall": 0.10810810810810811,
+          "confusion_matrix": {
+            "true_positiv": 0,
+            "true_negativ": 4,
+            "false_positive": 0,
+            "false_negative": 33,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f_one_score": 0.0
+          }
+        },
+        "deletion": {
+          "overall": 1.0,
+          "confusion_matrix": {
+            "true_positiv": 0,
+            "true_negativ": 37,
+            "false_positive": 0,
+            "false_negative": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f_one_score": 0.0
+          }
+        },
+        "invalidTransitionRate": 0.0,
+        "totalSections": 37
+      },
+      "coalition": {
+        "ids": [
+          3,
+          5
+        ],
+        "coalitionPrompt": "Think step by step, but only keep a minimum draft for each thinking step, with 5 words at most. You are strong, believe in your abilities."
+      }
+    },
+    {
+      "metrics": {
+        "titleType": {
+          "overall": 0.0,
+          "confusion_matrix": {
+            "true_positiv": 0,
+            "true_negativ": 0,
+            "false_positive": 0,
+            "false_negative": 37,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f_one_score": 0.0
+          }
+        },
+        "title": {
+          "overall": 0.10810810810810811,
+          "confusion_matrix": {
+            "true_positiv": 0,
+            "true_negativ": 4,
+            "false_positive": 0,
+            "false_negative": 33,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f_one_score": 0.0
+          }
+        },
+        "deletion": {
+          "overall": 1.0,
+          "confusion_matrix": {
+            "true_positiv": 0,
+            "true_negativ": 37,
+            "false_positive": 0,
+            "false_negative": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f_one_score": 0.0
+          }
+        },
+        "invalidTransitionRate": 0.0,
+        "totalSections": 37
+      },
+      "coalition": {
+        "ids": [
+          2,
+          6
+        ],
+        "coalitionPrompt": "Walk me through this context in manageable parts step by step, summarizing and analyzing as we go. Rephrase and expand the question, and respond."
+      }
+    },
+    {
+      "metrics": {
+        "titleType": {
+          "overall": 0.0,
+          "confusion_matrix": {
+            "true_positiv": 0,
+            "true_negativ": 0,
+            "false_positive": 5,
+            "false_negative": 32,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f_one_score": 0.0
+          }
+        },
+        "title": {
+          "overall": 0.09375,
+          "confusion_matrix": {
+            "true_positiv": 0,
+            "true_negativ": 3,
+            "false_positive": 5,
+            "false_negative": 29,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f_one_score": 0.0
+          }
+        },
+        "deletion": {
+          "overall": 1.0,
+          "confusion_matrix": {
+            "true_positiv": 0,
+            "true_negativ": 32,
+            "false_positive": 5,
+            "false_negative": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f_one_score": 0.0
+          }
+        },
+        "invalidTransitionRate": 0.1351351351351351,
+        "totalSections": 32
+      },
+      "coalition": {
+        "ids": [
+          2,
+          6
+        ],
+        "coalitionPrompt": "Walk me through this context in manageable parts step by step, summarizing and analyzing as we go. Rephrase and expand the question, and respond."
+      }
+    }
+  ]
+}
