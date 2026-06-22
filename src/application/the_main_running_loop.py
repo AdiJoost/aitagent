@@ -38,16 +38,14 @@ async def the_main_running_loop():
             filepath = dataPath.joinpath(filename)
             solutionPath = mainPath.joinpath("data", "solutions", filename)
             resultPath = mainPath.joinpath("data", "results", filename[:-5])
-            if os.path.isfile(filepath) and os.path.isfile(solutionPath):
-                for coalition in getPromptingMatrix(promptingStragegies)[15:18]:
-                    await _run_manual_agent(
-                        filepath,
-                        solutionPath,
-                        resultpath=resultPath,
-                        filename=filename,
-                        coalition=coalition,
-                    )
-                return
+            for coalition in getPromptingMatrix(promptingStragegies):
+                await _run_manual_agent(
+                    filepath,
+                    solutionPath,
+                    resultpath=resultPath,
+                    filename=filename,
+                    coalition=coalition,
+                )
 
 
 async def _run_manual_agent(
@@ -69,14 +67,14 @@ async def _run_manual_agent(
             "role": "system",
             "content": "You are an expert test designer. You modify testcases using MCP tool calls.\n"
             + "IMPORTANT: You MUST use tool calls to interact with the testcase.\n"
-            + "1. First call 'get_current_testcase' to see the current state.\n"
-            + "2. Then use the appropriate MCP tools to make changes.\n"
+            + "Use the appropriate MCP tools to make changes.\n"
             + "Never write code. Always use the provided tool calls. Do not use tools that start with _. Do not provide an explenation, just prompt the tools to execute."
             "When the task is complete, answere with TASK_COMPLETE. Only use ANSWERE_COMPLETE, when you are complete, do not add id in any other instance.",
         },
         {
             "role": "user",
-            "content": "You are given the testCase. However, it is structure with .... to make inditations and has some filler sections that are unnecessary. Change the titles of the sections to the corresponding titleType and remove the ... from the title. Remove sections, that are just filler. Remove fragemnts for structuring like multiple !",
+            "content": "You are given the testCase. However, it is structure with special characters to make inditations and may has some filler sections that are unnecessary."
+            "Change the titles of the sections to the corresponding titleType and remove the ... from the title. Titles should not repeat themselves in lower headers. Exec should always be changed to Execution",
         },
     ]
     if coalition.coalitionPrompt:
