@@ -1458,7 +1458,7 @@
         "title": "........(Exec) Stop ventilation",
         "titleType": "STANDARD",
         "parameters": { "parameters": [], "rows": [] }
-      },HERE
+      },
       {
         "changeDate": "2025-01-27T14:29:14.906Z",
         "descriptionGerman": "",

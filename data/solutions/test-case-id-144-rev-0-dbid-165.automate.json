@@ -1,7 +1,7 @@
 {
   "testSectionsUpdates": [
     {
-      "sectionId": 6667,
+      "sectionId": 6669,
       "changeType": "UPDATE",
       "sectionDTO": {
         "title": "General Setup",
@@ -9,7 +9,7 @@
       }
     },
     {
-      "sectionId": 6668,
+      "sectionId": 6670,
       "changeType": "UPDATE",
       "sectionDTO": {
         "title": "Set Patient Adult/Male",
@@ -17,7 +17,7 @@
       }
     },
     {
-      "sectionId": 6788,
+      "sectionId": 6671,
       "changeType": "UPDATE",
       "sectionDTO": {
         "title": "Set Alarms",
@@ -25,15 +25,15 @@
       }
     },
     {
-      "sectionId": 6700,
+      "sectionId": 6673,
       "changeType": "UPDATE",
       "sectionDTO": {
-        "title": "Default Control Setting PEEP",
+        "title": "Start ventilation",
         "titleType": "TITLE_HEADER_1"
       }
     },
     {
-      "sectionId": 7433,
+      "sectionId": 6674,
       "changeType": "UPDATE",
       "sectionDTO": {
         "title": "Execution",
@@ -41,7 +41,15 @@
       }
     },
     {
-      "sectionId": 6701,
+      "sectionId": 6675,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Default Control Setting PSupport",
+        "titleType": "TITLE_HEADER_1"
+      }
+    },
+    {
+      "sectionId": 6676,
       "changeType": "UPDATE",
       "sectionDTO": {
         "title": "Evaluation",
@@ -49,15 +57,15 @@
       }
     },
     {
-      "sectionId": 6702,
+      "sectionId": 6705,
       "changeType": "UPDATE",
       "sectionDTO": {
-        "title": "Lower Limit Control Setting PEEP,  Pcontrol = 15mbar",
+        "title": "Lower Limit Control Setting PSupport = 0, PEEP/CPAP = 4 (C6)",
         "titleType": "TITLE_HEADER_1"
       }
     },
     {
-      "sectionId": 6703,
+      "sectionId": 18857,
       "changeType": "UPDATE",
       "sectionDTO": {
         "title": "Setting",
@@ -65,7 +73,7 @@
       }
     },
     {
-      "sectionId": 65866,
+      "sectionId": 18858,
       "changeType": "UPDATE",
       "sectionDTO": {
         "title": "Evaluation",
@@ -73,15 +81,15 @@
       }
     },
     {
-      "sectionId": 6707,
+      "sectionId": 18859,
       "changeType": "UPDATE",
       "sectionDTO": {
-        "title": "Lower Limit Control Setting PEEP, Pcontrol = 5mbar",
+        "title": "Lower Limit Control Setting PSupport = 4, PEEP/CPAP = 0 (C6)",
         "titleType": "TITLE_HEADER_1"
       }
     },
     {
-      "sectionId": 6708,
+      "sectionId": 18860,
       "changeType": "UPDATE",
       "sectionDTO": {
         "title": "Setting",
@@ -89,7 +97,7 @@
       }
     },
     {
-      "sectionId": 65867,
+      "sectionId": 18861,
       "changeType": "UPDATE",
       "sectionDTO": {
         "title": "Evaluation",
@@ -97,15 +105,15 @@
       }
     },
     {
-      "sectionId": 6710,
+      "sectionId": 18862,
       "changeType": "UPDATE",
       "sectionDTO": {
-        "title": "SPONT mode Control Setting PEEP (C-6)",
+        "title": "Lower Limit Control Setting PSupport",
         "titleType": "TITLE_HEADER_1"
       }
     },
     {
-      "sectionId": 6711,
+      "sectionId": 6706,
       "changeType": "UPDATE",
       "sectionDTO": {
         "title": "Setting",
@@ -113,7 +121,7 @@
       }
     },
     {
-      "sectionId": 6712,
+      "sectionId": 6719,
       "changeType": "UPDATE",
       "sectionDTO": {
         "title": "Evaluation",
@@ -121,15 +129,15 @@
       }
     },
     {
-      "sectionId": 6713,
+      "sectionId": 6722,
       "changeType": "UPDATE",
       "sectionDTO": {
-        "title": "PSIMV+ mode Control Setting PEEP (C-6)",
+        "title": "Upper Limit Control Setting PSupport",
         "titleType": "TITLE_HEADER_1"
       }
     },
     {
-      "sectionId": 6714,
+      "sectionId": 6723,
       "changeType": "UPDATE",
       "sectionDTO": {
         "title": "Setting",
@@ -137,7 +145,23 @@
       }
     },
     {
-      "sectionId": 6715,
+      "sectionId": 18814,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Upper Limit Control Setting PSupport (C6)",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 18815,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Setting",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 18816,
       "changeType": "UPDATE",
       "sectionDTO": {
         "title": "Evaluation",
@@ -145,11 +169,67 @@
       }
     },
     {
-      "sectionId": 6748,
+      "sectionId": 6725,
       "changeType": "UPDATE",
       "sectionDTO": {
-        "title": "Upper Limit Control Setting PEEP (C-1, MR-1, T-1, C-3)",
+        "title": "PSupport = 30 mbar",
         "titleType": "TITLE_HEADER_1"
+      }
+    },
+    {
+      "sectionId": 6726,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Setting",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 6727,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Evaluation",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 6731,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Resolution Control Setting PSupport",
+        "titleType": "TITLE_HEADER_1"
+      }
+    },
+    {
+      "sectionId": 6732,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Setting",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 6733,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Evaluation",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 6734,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Setting",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 6735,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Evaluation",
+        "titleType": "TITLE_HEADER_2"
       }
     },
     {
@@ -161,23 +241,23 @@
       }
     },
     {
-      "sectionId": 6750,
+      "sectionId": 6852,
       "changeType": "UPDATE",
       "sectionDTO": {
-        "title": "Evaluation",
-        "titleType": "TITLE_HEADER_2"
-      }
-    },
-    {
-      "sectionId": 6754,
-      "changeType": "UPDATE",
-      "sectionDTO": {
-        "title": "Upper Limit Contol Setting PEEP (C-6)",
+        "title": "Digit Number Validation Control Setting PSupport",
         "titleType": "TITLE_HEADER_1"
       }
     },
     {
-      "sectionId": 6755,
+      "sectionId": 6853,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "PSupport < 10mbar",
+        "titleType": "TITLE_HEADER_1"
+      }
+    },
+    {
+      "sectionId": 6854,
       "changeType": "UPDATE",
       "sectionDTO": {
         "title": "Setting",
@@ -185,7 +265,15 @@
       }
     },
     {
-      "sectionId": 6756,
+      "sectionId": 6855,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Scripting",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 6856,
       "changeType": "UPDATE",
       "sectionDTO": {
         "title": "Evaluation",
@@ -193,11 +281,139 @@
       }
     },
     {
-      "sectionId": 9017,
+      "sectionId": 6857,
       "changeType": "UPDATE",
       "sectionDTO": {
-        "title": "PEEP Resolution step = 1",
+        "title": "10mbar <= PSupport < 100mbar",
         "titleType": "TITLE_HEADER_1"
+      }
+    },
+    {
+      "sectionId": 6858,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Setting",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 6859,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Scripting",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 6860,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Evaluation",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 6861,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "PSupport = 100mbar (C6)",
+        "titleType": "TITLE_HEADER_1"
+      }
+    },
+    {
+      "sectionId": 6862,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Setting",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 6863,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Scripting",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 6864,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Evaluation",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 6865,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Stop ventilation",
+        "titleType": "TITLE_HEADER_1"
+      }
+    },
+    {
+      "sectionId": 6866,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Execution",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 6736,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Measurement values",
+        "titleType": "TITLE_HEADER_1"
+      }
+    },
+    {
+      "sectionId": 8360,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Set ASL",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 6762,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "PSupport = default",
+        "titleType": "TITLE_HEADER_1"
+      }
+    },
+    {
+      "sectionId": 18817,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Setting",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 6763,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Execution",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 6764,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Evaluation",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 6765,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Stop Ventilation",
+        "titleType": "TITLE_HEADER_2"
       }
     },
     {
@@ -209,39 +425,15 @@
       }
     },
     {
-      "sectionId": 9019,
+      "sectionId": 6766,
       "changeType": "UPDATE",
       "sectionDTO": {
-        "title": "Evaluation",
-        "titleType": "TITLE_HEADER_2"
-      }
-    },
-    {
-      "sectionId": 9020,
-      "changeType": "UPDATE",
-      "sectionDTO": {
-        "title": "Setting",
-        "titleType": "TITLE_HEADER_2"
-      }
-    },
-    {
-      "sectionId": 9021,
-      "changeType": "UPDATE",
-      "sectionDTO": {
-        "title": "Evaluation",
-        "titleType": "TITLE_HEADER_2"
-      }
-    },
-    {
-      "sectionId": 6982,
-      "changeType": "UPDATE",
-      "sectionDTO": {
-        "title": "PEEP Values Format X",
+        "title": "PSupport = minimum",
         "titleType": "TITLE_HEADER_1"
       }
     },
     {
-      "sectionId": 6947,
+      "sectionId": 18820,
       "changeType": "UPDATE",
       "sectionDTO": {
         "title": "Setting",
@@ -249,55 +441,7 @@
       }
     },
     {
-      "sectionId": 7434,
-      "changeType": "UPDATE",
-      "sectionDTO": {
-        "title": "Scripting",
-        "titleType": "TITLE_HEADER_2"
-      }
-    },
-    {
-      "sectionId": 7435,
-      "changeType": "UPDATE",
-      "sectionDTO": {
-        "title": "Evaluation",
-        "titleType": "TITLE_HEADER_2"
-      }
-    },
-    {
-      "sectionId": 6950,
-      "changeType": "UPDATE",
-      "sectionDTO": {
-        "title": "PEEP Values Format XX",
-        "titleType": "TITLE_HEADER_1"
-      }
-    },
-    {
-      "sectionId": 6951,
-      "changeType": "UPDATE",
-      "sectionDTO": {
-        "title": "Setting",
-        "titleType": "TITLE_HEADER_2"
-      }
-    },
-    {
-      "sectionId": 6952,
-      "changeType": "UPDATE",
-      "sectionDTO": {
-        "title": "Scripting",
-        "titleType": "TITLE_HEADER_2"
-      }
-    },
-    {
-      "sectionId": 7085,
-      "changeType": "UPDATE",
-      "sectionDTO": {
-        "title": "Evaluation",
-        "titleType": "TITLE_HEADER_2"
-      }
-    },
-    {
-      "sectionId": 9013,
+      "sectionId": 18821,
       "changeType": "UPDATE",
       "sectionDTO": {
         "title": "Execution",
@@ -305,63 +449,7 @@
       }
     },
     {
-      "sectionId": 6760,
-      "changeType": "UPDATE",
-      "sectionDTO": {
-        "title": "Measurement values",
-        "titleType": "TITLE_HEADER_1"
-      }
-    },
-    {
-      "sectionId": 99629,
-      "changeType": "UPDATE",
-      "sectionDTO": {
-        "title": "Set ASL",
-        "titleType": "TITLE_HEADER_2"
-      }
-    },
-    {
-      "sectionId": 16962,
-      "changeType": "UPDATE",
-      "sectionDTO": {
-        "title": "PEEP = Default",
-        "titleType": "TITLE_HEADER_1"
-      }
-    },
-    {
-      "sectionId": 99355,
-      "changeType": "UPDATE",
-      "sectionDTO": {
-        "title": "Fluke VT900A - Parameter/Remote Setting",
-        "titleType": "TITLE_HEADER_2"
-      }
-    },
-    {
-      "sectionId": 6761,
-      "changeType": "UPDATE",
-      "sectionDTO": {
-        "title": "Setting",
-        "titleType": "TITLE_HEADER_2"
-      }
-    },
-    {
-      "sectionId": 9014,
-      "changeType": "UPDATE",
-      "sectionDTO": {
-        "title": "Execution",
-        "titleType": "TITLE_HEADER_2"
-      }
-    },
-    {
-      "sectionId": 17289,
-      "changeType": "UPDATE",
-      "sectionDTO": {
-        "title": "Waiting",
-        "titleType": "TITLE_HEADER_2"
-      }
-    },
-    {
-      "sectionId": 99356,
+      "sectionId": 18822,
       "changeType": "UPDATE",
       "sectionDTO": {
         "title": "Evaluation",
@@ -369,39 +457,23 @@
       }
     },
     {
-      "sectionId": 17290,
+      "sectionId": 18823,
       "changeType": "UPDATE",
       "sectionDTO": {
-        "title": "Stop ventilation",
+        "title": "Stop Ventilation",
         "titleType": "TITLE_HEADER_2"
       }
     },
     {
-      "sectionId": 16963,
+      "sectionId": 6765,
       "changeType": "UPDATE",
       "sectionDTO": {
-        "title": "Fluke VT900A - Local Setting",
+        "title": "Stop Ventilation",
         "titleType": "TITLE_HEADER_2"
       }
     },
     {
-      "sectionId": 16964,
-      "changeType": "UPDATE",
-      "sectionDTO": {
-        "title": "PEEP = Minimum",
-        "titleType": "TITLE_HEADER_1"
-      }
-    },
-    {
-      "sectionId": 68884,
-      "changeType": "UPDATE",
-      "sectionDTO": {
-        "title": "Fluke VT900A - Parameter/Remote Setting",
-        "titleType": "TITLE_HEADER_2"
-      }
-    },
-    {
-      "sectionId": 6777,
+      "sectionId": 9018,
       "changeType": "UPDATE",
       "sectionDTO": {
         "title": "Setting",
@@ -409,63 +481,15 @@
       }
     },
     {
-      "sectionId": 17291,
+      "sectionId": 6771,
       "changeType": "UPDATE",
       "sectionDTO": {
-        "title": "Execution",
-        "titleType": "TITLE_HEADER_2"
-      }
-    },
-    {
-      "sectionId": 17292,
-      "changeType": "UPDATE",
-      "sectionDTO": {
-        "title": "Waiting",
-        "titleType": "TITLE_HEADER_2"
-      }
-    },
-    {
-      "sectionId": 99357,
-      "changeType": "UPDATE",
-      "sectionDTO": {
-        "title": "Evaluation",
-        "titleType": "TITLE_HEADER_2"
-      }
-    },
-    {
-      "sectionId": 17293,
-      "changeType": "UPDATE",
-      "sectionDTO": {
-        "title": "Stop ventilation",
-        "titleType": "TITLE_HEADER_2"
-      }
-    },
-    {
-      "sectionId": 16966,
-      "changeType": "UPDATE",
-      "sectionDTO": {
-        "title": "Fluke VT900A - Local Setting",
-        "titleType": "TITLE_HEADER_2"
-      }
-    },
-    {
-      "sectionId": 16967,
-      "changeType": "UPDATE",
-      "sectionDTO": {
-        "title": "PEEP = Maximum",
+        "title": "PSupport = maximum",
         "titleType": "TITLE_HEADER_1"
       }
     },
     {
-      "sectionId": 99358,
-      "changeType": "UPDATE",
-      "sectionDTO": {
-        "title": "Fluke VT900A - Parameter/Remote Setting",
-        "titleType": "TITLE_HEADER_2"
-      }
-    },
-    {
-      "sectionId": 6779,
+      "sectionId": 18845,
       "changeType": "UPDATE",
       "sectionDTO": {
         "title": "Setting",
@@ -473,7 +497,7 @@
       }
     },
     {
-      "sectionId": 17294,
+      "sectionId": 18846,
       "changeType": "UPDATE",
       "sectionDTO": {
         "title": "Execution",
@@ -481,15 +505,7 @@
       }
     },
     {
-      "sectionId": 17295,
-      "changeType": "UPDATE",
-      "sectionDTO": {
-        "title": "Waiting",
-        "titleType": "TITLE_HEADER_2"
-      }
-    },
-    {
-      "sectionId": 65865,
+      "sectionId": 18847,
       "changeType": "UPDATE",
       "sectionDTO": {
         "title": "Evaluation",
@@ -497,23 +513,55 @@
       }
     },
     {
-      "sectionId": 6758,
+      "sectionId": 18848,
       "changeType": "UPDATE",
       "sectionDTO": {
-        "title": "Stop ventilation",
+        "title": "Stop Ventilation",
         "titleType": "TITLE_HEADER_2"
       }
     },
     {
-      "sectionId": 16969,
+      "sectionId": 18850,
       "changeType": "UPDATE",
       "sectionDTO": {
-        "title": "Fluke VT900A - Local Setting",
+        "title": "PSupport = maximum (C6)",
+        "titleType": "TITLE_HEADER_1"
+      }
+    },
+    {
+      "sectionId": 18852,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Setting",
         "titleType": "TITLE_HEADER_2"
       }
     },
     {
-      "sectionId": 6757,
+      "sectionId": 18853,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Execution",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 18854,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Evaluation",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 18855,
+      "changeType": "UPDATE",
+      "sectionDTO": {
+        "title": "Stop Ventilation",
+        "titleType": "TITLE_HEADER_2"
+      }
+    },
+    {
+      "sectionId": 8361,
       "changeType": "UPDATE",
       "sectionDTO": {
         "title": "General CleanUp",
@@ -521,7 +569,7 @@
       }
     },
     {
-      "sectionId": 6759,
+      "sectionId": 8367,
       "changeType": "UPDATE",
       "sectionDTO": {
         "title": "Clean ASL",
