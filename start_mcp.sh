@@ -11,8 +11,9 @@ echo ""
 echo "Starting ait-mcp in foreground (logs visible)..."
 apptainer exec \
   --env-file "$AITAGENT_DIR/.env" \
+  --pwd /ait-mcp \
   ait-mcp.sif \
-  python -m uvicorn main:app --host 0.0.0.0 --port 8000 &
+  python -m uvicorn run:app --host 0.0.0.0 --port 8000 &
 
 MCP_PID=$!
 

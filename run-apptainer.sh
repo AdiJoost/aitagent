@@ -53,8 +53,9 @@ OLLAMA_PID=$!
 echo "Starting ait-mcp..."
 apptainer exec \
   --env-file "$AITAGENT_DIR/.env" \
+  --pwd /ait-mcp \
   ait-mcp.sif \
-  python -m uvicorn main:app --host 0.0.0.0 --port 8000 > /dev/null 2>&1 &
+  python -m uvicorn run:app --host 0.0.0.0 --port 8000 > /dev/null 2>&1 &
 
 AIT_MCP_PID=$!
 
