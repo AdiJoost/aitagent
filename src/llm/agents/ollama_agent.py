@@ -2,6 +2,7 @@ import asyncio
 import json
 import logging
 import os
+import time
 from typing import List, Optional
 
 from ollama import AsyncClient, Client
@@ -9,20 +10,15 @@ from opentelemetry import trace
 from pydantic import ValidationError
 
 from src.llm.agents.base_agent import BaseAgent
-from src.model.result.test_stats import TestStats
+from src.model.result.enums.loop_stop_reason import LoopStopReason
 from src.utilities.agent_testing.test_utilities import getReducedTestcaseFromCall
 
 logger = logging.getLogger(__name__)
 tracer = trace.get_tracer(__name__)
 
-from mcp import ClientSession, StdioServerParameters
+from mcp import ClientSession
 from mcp.client.stdio import stdio_client
 from mcp.client.streamable_http import streamable_http_client
-from mcp.types import CallToolResult
-
-from src.model.evaluation_dto.update_dto_list import UpdateDTOList
-from src.utilities.telemetry.telemetry import Telemetry
-from src.utilities.telemetry.trace_provider import TraceProvider
 
 
 class OllamaAgent(BaseAgent):
@@ -123,6 +119,7 @@ class OllamaAgent(BaseAgent):
         self, client: AsyncClient, ollama_tools: List, session: ClientSession
     ) -> None:
         number_of_calls = 0
+        time_at_start = time.time()
         while number_of_calls < self.max_number_of_turns:
             number_of_calls += 1
 
@@ -181,7 +178,12 @@ class OllamaAgent(BaseAgent):
                 response.message.content and "TASK_COMPLETE" in response.message.content
             ):
                 logger.info("Breaking early")
-                break
+                self.loopStopReason = LoopStopReason.CODEWORD_DETECTED
+                self.numberOfLoops = number_of_calls
+                self.executionTime = time.time() - time_at_start
+                return
             else:
                 self.messages.append({"role": "user", "content": "continue"})
-                continue
+        self.loopStopReason = LoopStopReason.LOOP_EXPIRED
+        self.numberOfLoops = number_of_calls
+        self.executionTime = time.time() - time_at_start

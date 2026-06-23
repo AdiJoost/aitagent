@@ -8,6 +8,7 @@ from mcp.types import CallToolResult
 from pydantic_core import ValidationError
 
 from src.model.evaluation_dto.update_dto_list import UpdateDTOList
+from src.model.result.enums.loop_stop_reason import LoopStopReason
 from src.model.result.test_stats import TestStats
 from src.model.websocket.websocket_send_dto import WebSocketSendDTO
 
@@ -47,6 +48,9 @@ class BaseAgent:
         self.updateDtoList: Optional[List[UpdateDTOList]] = None
         self._on_progress = on_progress
         self.return_message = None
+        self.loopStopReason: LoopStopReason = None
+        self.numberOfLoops: int = 0
+        self.executionTime: int = 0
 
     async def emit_progress(self, event: WebSocketSendDTO) -> None:
         if self._on_progress:

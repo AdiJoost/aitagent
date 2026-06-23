@@ -54,7 +54,7 @@
         "createDate": "2023-02-03T18:14:21.783Z",
         "state": "ENABLED",
         "title": "Set ASL",
-        "titleType": "STANDARD",
+        "titleType": "TITLE_HEADER_3",
         "parameters": { "parameters": [], "rows": [] }
       }
     },
@@ -70,7 +70,7 @@
         "createDate": "2023-02-03T18:14:21.783Z",
         "state": "ENABLED",
         "title": "Set patient adult/male",
-        "titleType": "STANDARD",
+        "titleType": "TITLE_HEADER_3",
         "parameters": { "parameters": [], "rows": [] }
       }
     },
@@ -86,7 +86,7 @@
         "createDate": "2023-02-03T18:14:21.783Z",
         "state": "ENABLED",
         "title": "Set Alarms (toDo)",
-        "titleType": "STANDARD",
+        "titleType": "TITLE_HEADER_3",
         "parameters": { "parameters": [], "rows": [] }
       }
     },
@@ -135,7 +135,7 @@
         "createDate": "2023-02-03T18:14:21.783Z",
         "state": "ENABLED",
         "title": "Settings Rate = default value, TI = default value",
-        "titleType": "STANDARD",
+        "titleType": "TITLE_HEADER_3",
         "parameters": { "parameters": [], "rows": [] }
       }
     },
@@ -150,8 +150,8 @@
         "inspectionType": "FULL_AND_PARTIAL_TEST",
         "createDate": "2023-02-03T18:14:21.783Z",
         "state": "ENABLED",
-        "title": "(Setup) Settings Rate = default value, TI = default value",
-        "titleType": "STANDARD",
+        "title": "Setup",
+        "titleType": "TITLE_HEADER_3",
         "parameters": { "parameters": [], "rows": [] }
       }
     },
@@ -166,8 +166,8 @@
         "inspectionType": "FULL_AND_PARTIAL_TEST",
         "createDate": "2023-02-03T18:14:21.783Z",
         "state": "ENABLED",
-        "title": "(Exec) Settings Rate = default value, TI = default value (Tocheck)",
-        "titleType": "STANDARD",
+        "title": "Execution",
+        "titleType": "TITLE_HEADER_3",
         "parameters": { "parameters": [], "rows": [] }
       }
     },
@@ -182,8 +182,8 @@
         "inspectionType": "FULL_AND_PARTIAL_TEST",
         "createDate": "2023-02-03T18:14:21.783Z",
         "state": "DISABLED",
-        "title": "(Scripting) Settings Rate = default value, TI = default value",
-        "titleType": "STANDARD",
+        "title": "Scripting",
+        "titleType": "TITLE_HEADER_3",
         "parameters": { "parameters": [], "rows": [] }
       }
     },
@@ -198,8 +198,8 @@
         "inspectionType": "FULL_AND_PARTIAL_TEST",
         "createDate": "2023-02-03T18:14:21.783Z",
         "state": "DISABLED",
-        "title": "(Evaluation) Settings Rate = default value, TI = default value",
-        "titleType": "STANDARD",
+        "title": "Evaluation",
+        "titleType": "TITLE_HEADER_3",
         "parameters": { "parameters": [], "rows": [] }
       }
     },
@@ -214,8 +214,8 @@
         "inspectionType": "FULL_AND_PARTIAL_TEST",
         "createDate": "2023-02-03T18:14:21.783Z",
         "state": "ENABLED",
-        "title": "(Cleanup) Settings Rate = default value, TI = default value",
-        "titleType": "STANDARD",
+        "title": "Cleanup",
+        "titleType": "TITLE_HEADER_3",
         "parameters": { "parameters": [], "rows": [] }
       }
     },
@@ -251,8 +251,8 @@
         "inspectionType": "FULL_AND_PARTIAL_TEST",
         "createDate": "2023-02-06T09:33:49.528Z",
         "state": "ENABLED",
-        "title": "Settings Rate = default value, TI = default value",
-        "titleType": "STANDARD",
+        "title": "ASL",
+        "titleType": "TITLE_HEADER_3",
         "parameters": { "parameters": [], "rows": [] }
       }
     },
@@ -267,8 +267,8 @@
         "inspectionType": "FULL_AND_PARTIAL_TEST",
         "createDate": "2023-02-06T09:33:49.528Z",
         "state": "ENABLED",
-        "title": "Settings Rate = default value, TI = default value",
-        "titleType": "STANDARD",
+        "title": "Setup",
+        "titleType": "TITLE_HEADER_3",
         "parameters": { "parameters": [], "rows": [] }
       }
     },
@@ -283,8 +283,8 @@
         "inspectionType": "FULL_AND_PARTIAL_TEST",
         "createDate": "2023-02-06T09:33:49.528Z",
         "state": "ENABLED",
-        "title": "Settings Rate = default value, TI = default value (Tocheck)",
-        "titleType": "STANDARD",
+        "title": "Execution",
+        "titleType": "TITLE_HEADER_3",
         "parameters": { "parameters": [], "rows": [] }
       }
     },
@@ -299,8 +299,8 @@
         "inspectionType": "FULL_AND_PARTIAL_TEST",
         "createDate": "2023-02-06T09:33:49.528Z",
         "state": "ENABLED",
-        "title": "Settings Rate = default value, TI = default value",
-        "titleType": "STANDARD",
+        "title": "Cleanup",
+        "titleType": "TITLE_HEADER_3",
         "parameters": { "parameters": [], "rows": [] }
       }
     },
@@ -382,7 +382,7 @@
         "createDate": "2023-02-03T18:14:21.783Z",
         "state": "ENABLED",
         "title": "Stop ventilation",
-        "titleType": "STANDARD",
+        "titleType": "TITLE_HEADER_2",
         "parameters": { "parameters": [], "rows": [] }
       }
     },
@@ -398,7 +398,7 @@
         "createDate": "2023-02-03T18:14:21.783Z",
         "state": "ENABLED",
         "title": "Clean ASL",
-        "titleType": "STANDARD",
+        "titleType": "TITLE_HEADER_2",
         "parameters": { "parameters": [], "rows": [] }
       }
     }

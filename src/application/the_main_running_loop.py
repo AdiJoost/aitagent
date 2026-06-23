@@ -1,9 +1,11 @@
 import asyncio
 import json
+import logging
 import os
 from pathlib import Path
 
 from dotenv import load_dotenv
+from tqdm import tqdm
 
 from config.loggingSetup import setup_logging
 from config.rootPath import getRootPath
@@ -16,6 +18,8 @@ from src.utilities.agent_testing.test_utilities import (
     getPromptingMatrix,
     getPromptingStrategies,
 )
+
+logger = logging.getLogger(__name__)
 
 evaluating_testcase_name = "test-case-id-126-rev-3-dbid-1989.automate.json"
 useAnthropic = False
@@ -33,21 +37,31 @@ async def the_main_running_loop():
     promptingPaths = mainPath.joinpath("config", "prompt_candidates.json")
     promptingStragegies = getPromptingStrategies(promptingPaths)
 
-    for filename in os.listdir(dataPath):
-        if filename == evaluating_testcase_name:
+    filenames = [f for f in os.listdir(dataPath)]
+    for filename in tqdm(filenames, desc="Processing test cases"):
+        try:
             filepath = dataPath.joinpath(filename)
             solutionPath = mainPath.joinpath("data", "solutions", filename)
             resultPath = mainPath.joinpath("data", "results", filename[:-5])
             if os.path.isfile(filepath) and os.path.isfile(solutionPath):
-                for coalition in getPromptingMatrix(promptingStragegies)[15:18]:
-                    await _run_manual_agent(
-                        filepath,
-                        solutionPath,
-                        resultpath=resultPath,
-                        filename=filename,
-                        coalition=coalition,
-                    )
-                return
+                coalitions = getPromptingMatrix(promptingStragegies)
+                for coalition in tqdm(coalitions, desc=f"  {filename}", leave=False):
+                    try:
+                        await _run_manual_agent(
+                            filepath,
+                            solutionPath,
+                            resultpath=resultPath,
+                            filename=filename,
+                            coalition=coalition,
+                        )
+                    except Exception as e:
+                        logger.exception(
+                            f"Error processing coalition in file {filename}. Error: {e}"
+                        )
+        except Exception as e:
+            logger.exception(
+                f"Error processing file {filename}, skipping to next. Error: {e}"
+            )
 
 
 async def _run_manual_agent(
@@ -69,25 +83,28 @@ async def _run_manual_agent(
             "role": "system",
             "content": "You are an expert test designer. You modify testcases using MCP tool calls.\n"
             + "IMPORTANT: You MUST use tool calls to interact with the testcase.\n"
-            + "1. First call 'get_current_testcase' to see the current state.\n"
-            + "2. Then use the appropriate MCP tools to make changes.\n"
+            + "Use the appropriate MCP tools to make changes.\n"
             + "Never write code. Always use the provided tool calls. Do not use tools that start with _. Do not provide an explenation, just prompt the tools to execute."
             "When the task is complete, answere with TASK_COMPLETE. Only use ANSWERE_COMPLETE, when you are complete, do not add id in any other instance.",
         },
         {
             "role": "user",
-            "content": "You are given the testCase. However, it is structure with .... to make inditations and has some filler sections that are unnecessary. Change the titles of the sections to the corresponding titleType and remove the ... from the title. Remove sections, that are just filler. Remove fragemnts for structuring like multiple !",
+            "content": "You are given the testCase. However, it is structure with special characters to make inditations and may has some filler sections that are unnecessary."
+            "Change the titles of the sections to the corresponding titleType and remove the ... from the title. Titles should not repeat themselves in lower headers. Exec should always be changed to Execution",
         },
     ]
     if coalition.coalitionPrompt:
         messages.append({"role": "system", "content": coalition.coalitionPrompt})
 
+    max_number_of_turns = os.getenv("MAX_NUMBER_OF_TURNS") or 10
     if useAnthropic:
         ai_agent = ClaudeAgent(
-            messages=messages, max_number_of_turns=1, model=agentModel
+            messages=messages, max_number_of_turns=max_number_of_turns, model=agentModel
         )
     else:
-        ai_agent = OllamaAgent(messages=messages, max_number_of_turns=3)
+        ai_agent = OllamaAgent(
+            messages=messages, max_number_of_turns=max_number_of_turns
+        )
     await ai_agent.run(testCaseJson=testCaseString, solutionStr=solutionString)
     if ai_agent.latest_test_case_json:
         test_case_path = resultpath.joinpath(filename)
@@ -99,4 +116,7 @@ async def _run_manual_agent(
             results=ai_agent.results,
             coalition=coalition,
             resultpath=results_metrics_path,
+            executionTime=ai_agent.executionTime,
+            numberOfRounds=ai_agent.numberOfLoops,
+            loopStopReason=ai_agent.loopStopReason,
         )
