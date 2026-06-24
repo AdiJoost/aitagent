@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 [
   {
     "id": 1,
@@ -36,3 +37,43 @@
     "prompt": "Rephrase and expand the question, and respond."
   }
 ]
+=======
+[
+  {
+    "id": 1,
+    "name": "Plan-and-Solve",
+    "abbreviation": "PS",
+    "prompt": "Let's first understand the problem and devise a plan to solve the problem. Then, let's carry out the plan and solve the problem step by step."
+  },
+  {
+    "id": 2,
+    "name": "Thread of Thought",
+    "abbreviation": "ThoT",
+    "prompt": "Walk me through this context in manageable parts step by step, summarizing and analyzing as we go."
+  },
+  {
+    "id": 3,
+    "name": "Chain of Draft",
+    "abbreviation": "CoD",
+    "prompt": "Think step by step, but only keep a minimum draft for each thinking step, with 5 words at most."
+  },
+  {
+    "id": 4,
+    "name": "Contrastive Chain-of-Thought",
+    "abbreviation": "CCoT",
+    "prompt": "When Section title with header 1 is <Peep = 5> and the next section is Standard with <....(Exec)Peep = 5>, changing the second title to Peep = 5 and leaving it standard is wrong. Correct answere: Call the tool to change the titleType to <TITLE_HEADER_2> and the title to <Execution>."
+  },
+  {
+    "id": 5,
+    "name": "EmotionPrompt",
+    "abbreviation": "EP",
+    "prompt": "You are strong, believe in your abilities."
+  },
+  {
+    "id": 6,
+    "name": "Rephrase and Respond",
+    "abbreviation": "RaR",
+    "prompt": "Rephrase and expand the question, and respond."
+  }
+]
+>>>>>>> ad229f7e9d82747dcf8efd000a412118f5d291e2
