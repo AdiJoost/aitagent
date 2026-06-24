@@ -1,0 +1,350 @@
+{
+  "prior": {
+    "titleType": {
+      "overall": 0.01098901098901099,
+      "confusion_matrix": {
+        "true_positiv": 0,
+        "true_negativ": 1,
+        "false_positive": 0,
+        "false_negative": 90,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f_one_score": 0.0
+      }
+    },
+    "title": {
+      "overall": 0.08695652173913043,
+      "confusion_matrix": {
+        "true_positiv": 0,
+        "true_negativ": 8,
+        "false_positive": 0,
+        "false_negative": 83,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f_one_score": 0.0
+      }
+    },
+    "deletion": {
+      "overall": 0.9891304347826086,
+      "confusion_matrix": {
+        "true_positiv": 0,
+        "true_negativ": 91,
+        "false_positive": 0,
+        "false_negative": 1,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f_one_score": 0.0
+      }
+    },
+    "invalidTransitionRate": 0.0,
+    "totalSections": 92
+  },
+  "results": [
+    {
+      "metrics": {
+        "titleType": {
+          "overall": 0.01098901098901099,
+          "confusion_matrix": {
+            "true_positiv": 0,
+            "true_negativ": 1,
+            "false_positive": 0,
+            "false_negative": 90,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f_one_score": 0.0
+          }
+        },
+        "title": {
+          "overall": 0.08695652173913043,
+          "confusion_matrix": {
+            "true_positiv": 0,
+            "true_negativ": 8,
+            "false_positive": 0,
+            "false_negative": 83,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f_one_score": 0.0
+          }
+        },
+        "deletion": {
+          "overall": 0.9891304347826086,
+          "confusion_matrix": {
+            "true_positiv": 0,
+            "true_negativ": 91,
+            "false_positive": 0,
+            "false_negative": 1,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f_one_score": 0.0
+          }
+        },
+        "invalidTransitionRate": 0.0,
+        "totalSections": 92
+      },
+      "coalition": {
+        "ids": [
+          1
+        ],
+        "coalitionPrompt": "Let's first understand the problem and devise a plan to solve the problem. Then, let's carry out the plan and solve the problem step by step."
+      },
+      "executionTime": 281.8801620006561,
+      "numberOfRounds": 10,
+      "loopStopReason": "LOOP_EXPIRED"
+    },
+    {
+      "metrics": {
+        "titleType": {
+          "overall": 0.01098901098901099,
+          "confusion_matrix": {
+            "true_positiv": 0,
+            "true_negativ": 1,
+            "false_positive": 0,
+            "false_negative": 90,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f_one_score": 0.0
+          }
+        },
+        "title": {
+          "overall": 0.08695652173913043,
+          "confusion_matrix": {
+            "true_positiv": 0,
+            "true_negativ": 8,
+            "false_positive": 0,
+            "false_negative": 83,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f_one_score": 0.0
+          }
+        },
+        "deletion": {
+          "overall": 0.9891304347826086,
+          "confusion_matrix": {
+            "true_positiv": 0,
+            "true_negativ": 91,
+            "false_positive": 0,
+            "false_negative": 1,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f_one_score": 0.0
+          }
+        },
+        "invalidTransitionRate": 0.0,
+        "totalSections": 92
+      },
+      "coalition": {
+        "ids": [
+          2
+        ],
+        "coalitionPrompt": "Walk me through this context in manageable parts step by step, summarizing and analyzing as we go."
+      },
+      "executionTime": 341.7787983417511,
+      "numberOfRounds": 10,
+      "loopStopReason": "LOOP_EXPIRED"
+    },
+    {
+      "metrics": {
+        "titleType": {
+          "overall": 0.01098901098901099,
+          "confusion_matrix": {
+            "true_positiv": 0,
+            "true_negativ": 1,
+            "false_positive": 0,
+            "false_negative": 90,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f_one_score": 0.0
+          }
+        },
+        "title": {
+          "overall": 0.08695652173913043,
+          "confusion_matrix": {
+            "true_positiv": 0,
+            "true_negativ": 8,
+            "false_positive": 0,
+            "false_negative": 83,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f_one_score": 0.0
+          }
+        },
+        "deletion": {
+          "overall": 0.9891304347826086,
+          "confusion_matrix": {
+            "true_positiv": 0,
+            "true_negativ": 91,
+            "false_positive": 0,
+            "false_negative": 1,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f_one_score": 0.0
+          }
+        },
+        "invalidTransitionRate": 0.0,
+        "totalSections": 92
+      },
+      "coalition": {
+        "ids": [
+          3
+        ],
+        "coalitionPrompt": "Think step by step, but only keep a minimum draft for each thinking step, with 5 words at most."
+      },
+      "executionTime": 98.93852806091309,
+      "numberOfRounds": 10,
+      "loopStopReason": "LOOP_EXPIRED"
+    },
+    {
+      "metrics": {
+        "titleType": {
+          "overall": 0.01098901098901099,
+          "confusion_matrix": {
+            "true_positiv": 0,
+            "true_negativ": 1,
+            "false_positive": 0,
+            "false_negative": 90,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f_one_score": 0.0
+          }
+        },
+        "title": {
+          "overall": 0.08695652173913043,
+          "confusion_matrix": {
+            "true_positiv": 0,
+            "true_negativ": 8,
+            "false_positive": 0,
+            "false_negative": 83,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f_one_score": 0.0
+          }
+        },
+        "deletion": {
+          "overall": 0.9891304347826086,
+          "confusion_matrix": {
+            "true_positiv": 0,
+            "true_negativ": 91,
+            "false_positive": 0,
+            "false_negative": 1,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f_one_score": 0.0
+          }
+        },
+        "invalidTransitionRate": 0.0,
+        "totalSections": 92
+      },
+      "coalition": {
+        "ids": [
+          4
+        ],
+        "coalitionPrompt": "When Section title with header 1 is <Peep = 5> and the next section is Standard with <....(Exec)Peep = 5>, changing the second title to Peep = 5 and leaving it standard is wrong. Correct answere: Call the tool to change the titleType to <TITLE_HEADER_2> and the title to <Execution>."
+      },
+      "executionTime": 143.086284160614,
+      "numberOfRounds": 3,
+      "loopStopReason": "CODEWORD_DETECTED"
+    },
+    {
+      "metrics": {
+        "titleType": {
+          "overall": 0.01098901098901099,
+          "confusion_matrix": {
+            "true_positiv": 0,
+            "true_negativ": 1,
+            "false_positive": 0,
+            "false_negative": 90,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f_one_score": 0.0
+          }
+        },
+        "title": {
+          "overall": 0.08695652173913043,
+          "confusion_matrix": {
+            "true_positiv": 0,
+            "true_negativ": 8,
+            "false_positive": 0,
+            "false_negative": 83,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f_one_score": 0.0
+          }
+        },
+        "deletion": {
+          "overall": 0.9891304347826086,
+          "confusion_matrix": {
+            "true_positiv": 0,
+            "true_negativ": 91,
+            "false_positive": 0,
+            "false_negative": 1,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f_one_score": 0.0
+          }
+        },
+        "invalidTransitionRate": 0.0,
+        "totalSections": 92
+      },
+      "coalition": {
+        "ids": [
+          5
+        ],
+        "coalitionPrompt": "You are strong, believe in your abilities."
+      },
+      "executionTime": 2473.015123605728,
+      "numberOfRounds": 10,
+      "loopStopReason": "LOOP_EXPIRED"
+    },
+    {
+      "metrics": {
+        "titleType": {
+          "overall": 0.01098901098901099,
+          "confusion_matrix": {
+            "true_positiv": 0,
+            "true_negativ": 1,
+            "false_positive": 0,
+            "false_negative": 90,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f_one_score": 0.0
+          }
+        },
+        "title": {
+          "overall": 0.08695652173913043,
+          "confusion_matrix": {
+            "true_positiv": 0,
+            "true_negativ": 8,
+            "false_positive": 0,
+            "false_negative": 83,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f_one_score": 0.0
+          }
+        },
+        "deletion": {
+          "overall": 0.9891304347826086,
+          "confusion_matrix": {
+            "true_positiv": 0,
+            "true_negativ": 91,
+            "false_positive": 0,
+            "false_negative": 1,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f_one_score": 0.0
+          }
+        },
+        "invalidTransitionRate": 0.0,
+        "totalSections": 92
+      },
+      "coalition": {
+        "ids": [
+          6
+        ],
+        "coalitionPrompt": "Rephrase and expand the question, and respond."
+      },
+      "executionTime": 261.8841953277588,
+      "numberOfRounds": 10,
+      "loopStopReason": "LOOP_EXPIRED"
+    }
+  ]
+}

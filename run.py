@@ -8,10 +8,9 @@ from dotenv import load_dotenv
 from config.loggingSetup import setup_logging
 from config.rootPath import getRootPath
 from src.application.the_main_running_loop import the_main_running_loop
-from src.llm.agents.manual_agent import ClaudeAgent
+from src.llm.agents.claude_agent import ClaudeAgent
 from src.llm.agents.ollama_agent import OllamaAgent
 from src.model.prompting.prompting_coalition import PromptingCoalition
-from src.singel_worker import update_testcase_single_agent
 from src.utilities.agent_testing.test_utilities import (
     createOrExtendResult,
     getPromptingMatrix,

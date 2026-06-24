@@ -9,10 +9,9 @@ from tqdm import tqdm
 
 from config.loggingSetup import setup_logging
 from config.rootPath import getRootPath
-from src.llm.agents.manual_agent import ClaudeAgent
+from src.llm.agents.claude_agent import ClaudeAgent
 from src.llm.agents.ollama_agent import OllamaAgent
 from src.model.prompting.prompting_coalition import PromptingCoalition
-from src.singel_worker import update_testcase_single_agent
 from src.utilities.agent_testing.test_utilities import (
     createOrExtendResult,
     getPromptingMatrix,
@@ -37,7 +36,9 @@ async def the_main_running_loop():
     promptingPaths = mainPath.joinpath("config", "prompt_candidates.json")
     promptingStragegies = getPromptingStrategies(promptingPaths)
 
-    filenames = [f for f in os.listdir(dataPath)]
+    filenames = sorted(f for f in os.listdir(dataPath))
+    fileoffset = int(os.getenv("FILE_OFFSET", 0))
+    filenames = filenames[fileoffset:]
     for filename in tqdm(filenames, desc="Processing test cases"):
         try:
             filepath = dataPath.joinpath(filename)
