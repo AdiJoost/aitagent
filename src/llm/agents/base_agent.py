@@ -8,6 +8,7 @@ from mcp.types import CallToolResult
 from pydantic_core import ValidationError
 
 from src.model.evaluation_dto.update_dto_list import UpdateDTOList
+from src.model.result.enums.loop_stop_reason import LoopStopReason
 from src.model.result.test_stats import TestStats
 from src.model.websocket.websocket_send_dto import WebSocketSendDTO
 
@@ -20,19 +21,26 @@ ProgressCallback = Callable[[dict], Coroutine[Any, Any, None]]
 class BaseAgent:
     def __init__(
         self,
-        model: str = "gemma4:latest",
+        model: str = None,
         max_tokens: int = 2500,
         temperature: float = 0,
         max_number_of_turns: int = 10,
         on_progress: Optional[ProgressCallback] = None,
     ):
         self.messages = []
-        self.model = model
         self.max_tokens = max_tokens
         self.temperature = temperature
         self.max_number_of_turns = max_number_of_turns
+
+        self.model = model or os.getenv("AGENT_MODEL")
+        logger.debug(f"Model is: {self.model}")
+
         self.mcp_http = os.getenv("MCP_HOST")
+        logger.debug(f"MCP_HTTP is: {self.mcp_http}")
+
         self.ollama_host = os.getenv("OLLAMA_HOST")
+        logger.debug(f"OLLAMA_HOST is: {self.ollama_host}")
+
         self.with_trace_provider = False
         self.results: TestStats = None
         self.tools_called = []
@@ -40,6 +48,9 @@ class BaseAgent:
         self.updateDtoList: Optional[List[UpdateDTOList]] = None
         self._on_progress = on_progress
         self.return_message = None
+        self.loopStopReason: LoopStopReason = None
+        self.numberOfLoops: int = 0
+        self.executionTime: int = 0
 
     async def emit_progress(self, event: WebSocketSendDTO) -> None:
         if self._on_progress:

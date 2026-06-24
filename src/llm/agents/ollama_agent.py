@@ -2,6 +2,7 @@ import asyncio
 import json
 import logging
 import os
+import time
 from typing import List, Optional
 
 from ollama import AsyncClient, Client
@@ -9,28 +10,22 @@ from opentelemetry import trace
 from pydantic import ValidationError
 
 from src.llm.agents.base_agent import BaseAgent
-from src.model.result.test_stats import TestStats
-from src.utilities.agent_testing.test_utilities import \
-    getReducedTestcaseFromCall
+from src.model.result.enums.loop_stop_reason import LoopStopReason
+from src.utilities.agent_testing.test_utilities import getReducedTestcaseFromCall
 
 logger = logging.getLogger(__name__)
 tracer = trace.get_tracer(__name__)
 
-from mcp import ClientSession, StdioServerParameters
+from mcp import ClientSession
 from mcp.client.stdio import stdio_client
 from mcp.client.streamable_http import streamable_http_client
-from mcp.types import CallToolResult
-
-from src.model.evaluation_dto.update_dto_list import UpdateDTOList
-from src.utilities.telemetry.telemetry import Telemetry
-from src.utilities.telemetry.trace_provider import TraceProvider
 
 
 class OllamaAgent(BaseAgent):
     def __init__(
         self,
         messages: list,
-        model: str = "gemma4:latest",
+        model: str = None,
         max_tokens: int = 2500,
         temperature: float = 0,
         max_number_of_turns: int = 10,
@@ -73,7 +68,7 @@ class OllamaAgent(BaseAgent):
 
     async def run(self, testCaseJson: str, solutionStr: str):
         async with (
-            streamable_http_client(self.mcp_http) as (read, write, _),
+            streamable_http_client(f"{self.mcp_http}/mcp") as (read, write, _),
             ClientSession(read, write) as session,
         ):
             logger.info("Setup Agent")
@@ -101,7 +96,7 @@ class OllamaAgent(BaseAgent):
         logger.debug("---calling Model with---")
         if len(self.messages) > 0:
             logger.debug(f"{self.messages[-1]}")
-        
+
         response = await client.chat(
             model=self.model,
             messages=self.messages,
@@ -123,64 +118,72 @@ class OllamaAgent(BaseAgent):
     async def _run_agent_loop(
         self, client: AsyncClient, ollama_tools: List, session: ClientSession
     ) -> None:
-            number_of_calls = 0
-            while number_of_calls < self.max_number_of_turns:
-                number_of_calls += 1
+        number_of_calls = 0
+        time_at_start = time.time()
+        while number_of_calls < self.max_number_of_turns:
+            number_of_calls += 1
 
-                logger.info("Get Model Response")
-                response = await self._get_model_response(
-                    client=client, ollama_tools=ollama_tools
-                )
+            logger.info("Get Model Response")
+            response = await self._get_model_response(
+                client=client, ollama_tools=ollama_tools
+            )
 
-                assistant_message = {
-                    "role": "assistant",
-                    "content": response.message.content,
-                }
-                if response.message.tool_calls:
-                    logger.info("Toolcall detected")
-                    assistant_message["tool_calls"] = [
-                        {
-                            "function": {
-                                "name": tc.function.name,
-                                "arguments": tc.function.arguments,
-                            }
+            assistant_message = {
+                "role": "assistant",
+                "content": response.message.content,
+            }
+            if response.message.tool_calls:
+                logger.info("Toolcall detected")
+                assistant_message["tool_calls"] = [
+                    {
+                        "function": {
+                            "name": tc.function.name,
+                            "arguments": tc.function.arguments,
                         }
-                        for tc in response.message.tool_calls
-                    ]
-                self.messages.append(assistant_message)
+                    }
+                    for tc in response.message.tool_calls
+                ]
+            self.messages.append(assistant_message)
 
-                if response.message.tool_calls:
-                    for tc in response.message.tool_calls:
-                        tool_name = tc.function.name
-                        if tool_name == "get_current_testcase":
-                            tool_args = tc.function.arguments
-                            logger.info(f"Calling tool: {tool_name}({tool_args})")
-                            self.tools_called.append(f"Calling tool: {tool_name}({tool_args})")
-                            result = await session.call_tool(tool_name, arguments=tool_args)
-                            self.messages.append(
-                                {
-                                    "role": "tool",
-                                    "content": getReducedTestcaseFromCall(message=result),
-                                }
-                            )
-                        else:
-                            tool_args = tc.function.arguments
-                            logger.info(f"Calling tool: {tool_name}({tool_args})")
-                            self.tools_called.append(f"Calling tool: {tool_name}({tool_args})")
-                            result = await session.call_tool(tool_name, arguments=tool_args)
-                            self.messages.append(
-                                {
-                                    "role": "tool",
-                                    "content": str(result),
-                                }
-                            )
-                elif (
-                    response.message.content and "TASK_COMPLETE" in response.message.content
-                ):
-                    logger.info("Breaking early")
-                    break
-                else:
-                    self.messages.append({"role": "user", "content": "continue"})
-                    continue
-
-    
+            if response.message.tool_calls:
+                for tc in response.message.tool_calls:
+                    tool_name = tc.function.name
+                    if tool_name == "get_current_testcase":
+                        tool_args = tc.function.arguments
+                        logger.info(f"Calling tool: {tool_name}({tool_args})")
+                        self.tools_called.append(
+                            f"Calling tool: {tool_name}({tool_args})"
+                        )
+                        result = await session.call_tool(tool_name, arguments=tool_args)
+                        self.messages.append(
+                            {
+                                "role": "tool",
+                                "content": getReducedTestcaseFromCall(message=result),
+                            }
+                        )
+                    else:
+                        tool_args = tc.function.arguments
+                        logger.info(f"Calling tool: {tool_name}({tool_args})")
+                        self.tools_called.append(
+                            f"Calling tool: {tool_name}({tool_args})"
+                        )
+                        result = await session.call_tool(tool_name, arguments=tool_args)
+                        self.messages.append(
+                            {
+                                "role": "tool",
+                                "content": str(result),
+                            }
+                        )
+            elif (
+                response.message.content and "TASK_COMPLETE" in response.message.content
+            ):
+                logger.info("Breaking early")
+                self.loopStopReason = LoopStopReason.CODEWORD_DETECTED
+                self.numberOfLoops = number_of_calls
+                self.executionTime = time.time() - time_at_start
+                return
+            else:
+                self.messages.append({"role": "user", "content": "continue"})
+        self.loopStopReason = LoopStopReason.LOOP_EXPIRED
+        self.numberOfLoops = number_of_calls
+        self.executionTime = time.time() - time_at_start

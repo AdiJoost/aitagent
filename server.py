@@ -13,7 +13,7 @@ from sse_starlette.sse import EventSourceResponse
 
 from config.loggingSetup import setup_logging
 from src.application.the_main_running_loop import the_main_running_loop
-from src.llm.agents.manual_agent import ClaudeAgent
+from src.llm.agents.claude_agent import ClaudeAgent
 from src.model.websocket.websocket_message_type import WebSocketMessageType
 from src.model.websocket.websocket_send_dto import WebSocketSendDTO
 
